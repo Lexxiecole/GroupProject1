@@ -62,12 +62,12 @@ first group project
 
 
 
-
+<!--ACE     I need to make the add task input box longer>
 <!--ACE     Time Due should be in a timestamp format, only legit hours can be input, check bootstrap forms for this>
 
 <!--ACE     Folder should be changed into a dropdown style menu so that users cannot be confused. later down the road, users may be able to add a new folder to add things to (example: a "kids" folder)>
 <!--ACE     javascript: border of same color goes around tasks when to complete is on and when completed is on. border color switches-->
-
+<!--ACE     why the heck are all of the input boxed different sizes? Why are they not working together???>
 
 
 

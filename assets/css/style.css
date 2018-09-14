@@ -109,30 +109,43 @@ colorpallets.net
 
 /* inputs */
 #addTask {
-
+    font-family: 'Rufina', serif;
+    color: #234a56;
+    font-size: 12px;
 }
 
 #timeDue {
-
+    font-family: 'Rufina', serif;
+    color: #234a56;
+    font-size: 12px;
 }
 
 #dateDue {
-
+    font-family: 'Rufina', serif;
+    color: #234a56;
+    font-size: 12px;
 }
 
 #folder {
-
+    font-family: 'Rufina', serif;
+    color: #234a56;
+    font-size: 12px;
 }
 
 #comments {
-    
+    font-family: 'Rufina', serif;
+    color: #234a56;
+    font-size: 12px;
 }
 
 
 /* submit button */
 
 #submitBtn {
-
+    background-color: white;
+    border-color: #234a56;
+    font-family: 'Rufina', serif;
+    color: #234a56;
 }
 
 #rowSecond {
