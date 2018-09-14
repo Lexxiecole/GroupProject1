@@ -21,16 +21,16 @@
     <!--font awesome link-->
 
     <title>Focus</title>
-
 </head>
 
-<body>
 
+<body>
+<!--navbar-->
     <nav></nav>
 
     <div class="container" id = "firstContainer">
 
-<!--row-->
+<!--row One-->
         <div class="row" id = "rowFirst">
 
             <div class="col-3 border" id = "column3Div1Heading">
@@ -60,7 +60,7 @@
                     <button id="submitBtn" class="btn btn-primary">Submit</button>
                 </form>
 
-<!--row-->
+<!--row Two-->
         <div class="row"  id = "row2">
 
             <div class="col-8 border" id = "row2Column8">
@@ -72,32 +72,57 @@
              </div>
         </div>
                 
-<!--row-->
+<!--row Three-->
         <div class="row" id = "row3">
             <div class="col-12 border" id = "row3Column12">
 
-<!-- this is the first task  -->
-                <div class="row border">
+<!-- Task one  -->
+                <div class="row border" id = "taskOne">
 
-                    <div class="col-2">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label" for="defaultCheck1"> checkbox </label>
+                    <div class="col-2" id = "task1Col2">
+                        <div class="form-check" id = "task1Col2Form">
+                            <input class="form-check-input" type="checkbox" value="" id="checkboxID">
                         </div>
                     </div>
 
                     <div class="col-8">
-                        <p>Task</p>
-                        <p>comments</p>
+                        <p id = "task"> Task</p>
+                        <p id = "comments">comments</p>
                     </div>
 
                     <div class="col-2">
-                        <p>time due</p>
-                        <p>date due</p>
+                        <p id = "timeDue">time due</p>
+                        <p id = "dateDue">date due</p>
                     </div>
                 </div>
 
-<!-- the second one -->
+
+
+<!-- something i am thinking of :
+
+    should we create JS so that the task one full div class is repeated 
+    over and over when the submit button is pushed? so basically rhe same
+    css wil go through, but the action wil be repeated? 
+
+    Also, it should be noted that 
+        TASK
+        COMMENTS
+        TIME DUE
+        DATE DUE
+    should be where the user puts the information in. that should show the 
+    user input
+
+
+-->
+
+
+
+
+
+
+
+
+<!-- Task two -->
                 <div class="row border">
 
                     <div class="col-2">
@@ -119,7 +144,6 @@
 
                 </div>
                 
-<!-- the third  one-->
                 <div class="row border">
                             
                     <div class="col-2">

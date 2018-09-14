@@ -1,6 +1,12 @@
+/*navbar*/
+
+
+/*container*/
 #firstContainer {
 
 }
+
+/*row One*/
 
 #rowFirst {
 
@@ -71,6 +77,8 @@
 
 }
 
+/*row 2*/
+
 #row2 {
 
 }
@@ -91,28 +99,45 @@
 
 }
 
+/*row 3*/
+
 #row3 {
 
 }
 
 #row3Column12 {
-    
+
 }
 
+/*task one*/
 
+#taskOne {
 
+}
 
+#task1Col2 {
 
+}
 
+#task1Col2Form {
 
+}
 
+#task {
 
+}
 
+#comments {
 
+}
 
+#timeDue {
 
+}
 
-
+#dateDue {
+    
+}
 
 
 
