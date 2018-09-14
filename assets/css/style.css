@@ -163,28 +163,28 @@ colorpallets.net
     font-family: 'Rufina', serif;
     color: #234a56;
     font-size: 12px;
-    width: 32.825%;
+    width: 33%;
 }
 
 #dateDue1 {
     font-family: 'Rufina', serif;
     color: #234a56;
     font-size: 12px;
-    width: 32.8%;
+    width: 33%;
 }
 
 #folder1 {
     font-family: 'Rufina', serif;
     color: #234a56;
     font-size: 12px;
-    width: 32.8%;
+    width: 32.75%;
 }
 
 #comments1 {
     font-family: 'Rufina', serif;
     color: #234a56;
     font-size: 12px;
-    width: 86%;
+    width: 89%;
 }
 
 
@@ -255,24 +255,24 @@ colorpallets.net
 
 }
 
-#task {
+#task1 {
     font-family: 'Adamina', serif;
     color: #234a56;
 
 }
 
-#comments {
+#comments1 {
     font-family: 'Scheherazade', serif;
     color: #234a56;
 
 }
 
-#timeDue {
+#timeDue1 {
     font-family: 'Scheherazade', serif;
     color: #234a56;
 }
 
-#dateDue {
+#dateDue1 {
     font-family: 'Scheherazade', serif;
     color: #234a56;
 }
@@ -282,16 +282,62 @@ colorpallets.net
 
 #taskTwo {
     background-color: #89b9c5;
+    font-family: 'Adamina', serif;
+    color: #234a56;
 }
 
+#task2 {
+    font-family: 'Adamina', serif;
+    color: #234a56;
 
+}
+
+#comments2 {
+    font-family: 'Scheherazade', serif;
+    color: #234a56;
+
+}
+
+#timeDue2 {
+    font-family: 'Scheherazade', serif;
+    color: #234a56;
+}
+
+#dateDue2 {
+    font-family: 'Scheherazade', serif;
+    color: #234a56;
+}
+
+/*TASK THREE*/
 
 
 #taskThree {
     background-color: #c1dee2;
+    font-family: 'Adamina', serif;
+    color: #234a56;
 }
 
+#task3 {
+    font-family: 'Adamina', serif;
+    color: #234a56;
 
+}
+
+#comments3 {
+    font-family: 'Scheherazade', serif;
+    color: #234a56;
+
+}
+
+#timeDue3 {
+    font-family: 'Scheherazade', serif;
+    color: #234a56;
+}
+
+#dateDue3 {
+    font-family: 'Scheherazade', serif;
+    color: #234a56;
+}
 
 
 
