@@ -26,7 +26,12 @@
 
 <body>
 <!--navbar-->
-    <nav></nav>
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+    </a>
+</nav>
+
 
     <div class="container" id = "firstContainer">
 
@@ -49,10 +54,12 @@
 
             <div class="col-9" id = "column9">
 
+  <!--I think it woudl look best if header were moved to to top of the page, moving the left side task bar to underneath, in line with to complete and completed-->          <div id = "header">
                 <h1 class="text-center" id = "appName">F O C U S</h1>
                 <div class="quoteDiv">
                     <p id="quote"> "The most inspiration quote that wasn't very inspirational is the one that you tell yourself." </p>
                 </div>
+            </div>
 
                 <form>
                     <input id="addTask" type="text" placeholder="Add Task">

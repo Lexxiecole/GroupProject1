@@ -17,19 +17,16 @@ colorpallets.net
 /*FONTS!!!*/
 
 /* 
-2--TASK--   font-family: 'Adamina', serif; 
+2--TASK & FOLDERS--   font-family: 'Adamina', serif; 
 
 4--QUOTE--   font-family: 'Sacramento', cursive;
 
 
-6--COMMENTS, TIME DUE, DATE DUE--   font-family: 'Scheherazade', serif;
+6--COMMENTS, TIME DUE, DATE DUE, FOLDER NAMES--   font-family: 'Scheherazade', serif;
 
 1--keep --  font-family: 'Merriweather', serif;
 3--keep--   font-family: 'Rufina', serif;
-5--keep--  font-family: 'Cormorant', serif;
-
-font-family: 'Sacramento', cursive;
-
+5--TASK ORGANIZER & TO COMPLETE/COMPLETED--  font-family: 'Cormorant', serif;
 */
 
 
@@ -51,13 +48,12 @@ font-family: 'Sacramento', cursive;
 }
 
 #taskOrganizer {
-    /*one*/
-    font-family: 'Merriweather', serif;
+    font-family: 'Cormorant', serif;
 
 }
 
 #folderz {
-
+    font-family: 'Adamina', serif;
 
 }
 
@@ -66,29 +62,33 @@ font-family: 'Sacramento', cursive;
 }
 
 #work {
-
+    font-family: 'Scheherazade', serif;
 }
 
 #school {
-
+    font-family: 'Scheherazade', serif;
 }
 
 #home {
-
+    font-family: 'Scheherazade', serif;
 }
 
 #exercise {
-
+    font-family: 'Scheherazade', serif;
 }
 
 #other {
-
+    font-family: 'Scheherazade', serif;
 }
 
 
 
 #column9 {
 
+}
+
+#header {
+    
 }
 
 #appName {
