@@ -45,7 +45,7 @@ first group project
 
 
 
-
+<!--ACE     JS//character count needs to be set on quote options so that they are only one line long.If they are longer than one line, it will throw off the page.>
 
 
 
