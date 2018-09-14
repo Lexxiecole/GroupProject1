@@ -42,65 +42,97 @@
                     </ul>
                 </div>
             </div>
-                <div class="col-9">
-                    <h1 class="text-center">Focus</h1>
-                    <div class="quoteDiv">
-                        <p id="quote"> The most inspiration quote that wasn't very inspirational is the one that you
-                            tell yourself.</p>
+            <div class="col-9">
+                <h1 class="text-center">Focus</h1>
+                <div class="quoteDiv">
+                    <p id="quote"> The most inspiration quote that wasn't very inspirational is the one that you
+                        tell yourself.</p>
+                </div>
+
+
+                <form>
+                    <input id="add-task" type="text" placeholder="Add Task">
+                    <input id="time-due" type="text" placeholder="Time Due">
+                    <input id="date-due" type="date" placeholder="Date Due">
+                    <input id="folder" type="text" placeholder="Folder">
+                </form>
+
+
+                <button id="submit" class="btn btn-primary">Submit</button>
+                <div class="row">
+                    <div class="col-8 border">
+                        <h1>To Complete</h1>
                     </div>
-
-
-                    <form>
-                        <input id="add-task" type="text" placeholder="Add Task">
-                        <input id="time-due" type="text" placeholder="Time Due">
-                        <input id="date-due" type="date" placeholder="Date Due">
-                        <input id="folder" type="text" placeholder="Folder">
-                    </form>
-
-
-                    <button id="submit" class="btn btn-primary">Submit</button>
-                    <div class="row">
-                        <div class="col-8 border">
-                            <h1>To Complete</h1>
-                        </div>
-                        <div class="col-4 border">
-                            <h1>Completed</h1>
-                        </div>
+                    <div class="col-4 border">
+                        <h1>Completed</h1>
                     </div>
-                    <div class="row">
-                        <div class="col-12 border">
-                            <div class="row border">
-                                <div class="col-2">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                        <label class="form-check-label" for="defaultCheck1">
-                                            checkbox
-                                        </label>
-                                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 border">
+                        <!-- this is the first task  -->
+                        <div class="row border">
+                            <div class="col-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        checkbox
+                                    </label>
                                 </div>
-                                <p>Task</p>
                             </div>
-                            <div class="row border">
-                                <div class="col-2">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-                                        <label class="form-check-label" for="defaultCheck2">
-                                            checkbox
-                                        </label>
-                                    </div>
+                            <div class="col-8">
+                                <p>Task</p>
+                                <p>comments</p>
+                            </div>
+                            <div class="col-2">
+                                <p>time due</p>
+                                <p>date due</p>
+                            </div>
+                        </div>
+                        <!-- the second one -->
+                        <div class="row border">
+                            <div class="col-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">
+                                        checkbox
+                                    </label>
                                 </div>
-                                <p>Task</p>
                             </div>
-                            <div class="row border">
-                                <div class="col-2"></div>
+                            <div class="col-8">
                                 <p>Task</p>
+                                <p>comments</p>
+                            </div>
+                            <div class="col-2">
+                                <p>time due</p>
+                                <p>date due</p>
+                            </div>
+
+                        </div>
+                        <!-- the third -->
+                        <div class="row border">
+                            <div class="col-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        checkbox
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <p>Task</p>
+                                <p>comments</p>
+                            </div>
+                            <div class="col-2">
+                                <p>time due</p>
+                                <p>date due</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="assets/javascript/app.js"></script>
+    </div>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 
 </html>
