@@ -88,7 +88,7 @@ colorpallets.net
 }
 
 #header {
-    
+
 }
 
 #appName {
@@ -106,6 +106,8 @@ colorpallets.net
     color: #234a56;
 }
 
+
+/* inputs */
 #addTask {
 
 }
@@ -121,6 +123,13 @@ colorpallets.net
 #folder {
 
 }
+
+#comments {
+    
+}
+
+
+/* submit button */
 
 #submitBtn {
 

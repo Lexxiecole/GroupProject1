@@ -54,7 +54,7 @@ first group project
 
 
 
-  <!--ACE       I think it would look best if header were moved to to top of the page, moving the left side task bar to underneath, in line with to complete and completed--> 
+  <!--ACE       I think it would look best if header were moved to to top of the page, moving the left side task bar to underneath, in line with to complete and completed, to make the app look more clean--> 
 
 
 
@@ -63,9 +63,9 @@ first group project
 
 
 
+<!--ACE     Time Due should be in a timestamp format, only legit hours can be input, check bootstrap forms for this>
 
-
-
+<!--ACE     Folder should be changed into a dropdown style menu so that users cannot be confused. later down the road, users may be able to add a new folder to add things to (example: a "kids" folder)>
 <!--ACE     javascript: border of same color goes around tasks when to complete is on and when completed is on. border color switches-->
 
 
