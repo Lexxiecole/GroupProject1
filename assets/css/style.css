@@ -17,18 +17,20 @@ colorpallets.net
 /*FONTS!!!*/
 
 /* 
-1--keep --  font-family: 'Merriweather', serif;
 2--TASK--   font-family: 'Adamina', serif; 
-3--keep--   font-family: 'Rufina', serif;
-4--keep--   font-family: 'Fredericka the Great', cursive;
-5--keep--  font-family: 'Cormorant', serif;
+
+4--QUOTE--   font-family: 'Fredericka the Great', cursive;
+7--QUOTE--   font-family: 'Limelight', cursive;
+8--QUOTE--   font-family: 'Galada', cursive;
+9--QUOTE--   font-family: 'Londrina Shadow', cursive;
 
 6--COMMENTS, TIME DUE, DATE DUE--   font-family: 'Scheherazade', serif;
 
-7--keep--   font-family: 'Limelight', cursive;
-8--keep--   font-family: 'Galada', cursive;
+1--keep --  font-family: 'Merriweather', serif;
+3--keep--   font-family: 'Rufina', serif;
+5--keep--  font-family: 'Cormorant', serif;
 
-9--keep--   font-family: 'Londrina Shadow', cursive;
+
 
 */
 
@@ -66,27 +68,23 @@ colorpallets.net
 }
 
 #work {
-    /*two*/
-    font-family: 'Adamina', serif;
+
 }
 
 #school {
-    /* six*/
-    font-family: 'Scheherazade', serif;
+
 }
 
 #home {
-    /*seven*/
-    font-family: 'Limelight', cursive;
+
 }
 
 #exercise {
-    font-family: 'Galada', cursive;
+
 }
 
 #other {
-    /*nine*/
-    font-family: 'Londrina Shadow', cursive;
+
 }
 
 
@@ -139,19 +137,23 @@ colorpallets.net
 }
 
 #row2Column8 {
-
+    background-color: #234a56;
 }
 
 #toCompleteBtn {
     font-family: 'Cormorant', serif;
+    background-color: #234a56;
+    color: #dde7ec;
 }
 
 #row2Column4 {
-    
+    background-color: #417d95;
 }
 
 #completedBtn {
     font-family: 'Cormorant', serif;
+    background-color: #417d95;
+    color: #dde7ec;
 }
 
 /*row 3*/

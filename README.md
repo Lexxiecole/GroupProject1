@@ -66,6 +66,7 @@ first group project
 
 
 
+<!--javascript: border of same color goes around tasks when to complete is on and when completed is on. border color switches-->
 
 
 
@@ -82,8 +83,7 @@ first group project
 
 
 
-
-
+<!--js number the checkboxes-->   
 
 
 
@@ -111,7 +111,7 @@ first group project
         COMMENTS
         TIME DUE
         DATE DUE
-    should be where the user puts the information in. that should show the 
+           should be where the user puts the information in. that should show the 
     user input
 
 
