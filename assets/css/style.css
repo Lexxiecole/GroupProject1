@@ -17,31 +17,19 @@ colorpallets.net
 /*FONTS!!!*/
 
 /* 
-font-family: 'Merriweather', serif;
+1--keep --  font-family: 'Merriweather', serif;
+2--TASK--   font-family: 'Adamina', serif; 
+3--keep--   font-family: 'Rufina', serif;
+4--keep--   font-family: 'Fredericka the Great', cursive;
+5--keep--  font-family: 'Cormorant', serif;
 
-font-family: 'Adamina', serif;
-font-family: 'Oleo Script', cursive;
-font-family: 'Julius Sans One', sans-serif;
+6--COMMENTS, TIME DUE, DATE DUE--   font-family: 'Scheherazade', serif;
 
-font-family: 'Cabin Sketch', cursive;
-font-family: 'Playball', cursive;
-font-family: 'Rufina', serif;
-font-family: 'Fredericka the Great', cursive;
+7--keep--   font-family: 'Limelight', cursive;
+8--keep--   font-family: 'Galada', cursive;
 
-font-family: 'Grand Hotel', cursive;
-font-family: 'Cormorant', serif;
-font-family: 'Pinyon Script', cursive;
-font-family: 'Scheherazade', serif;
-font-family: 'Limelight', cursive;
+9--keep--   font-family: 'Londrina Shadow', cursive;
 
-font-family: 'Dawning of a New Day', cursive;
-font-family: 'Life Savers', cursive;
-font-family: 'Kranky', cursive;
-font-family: 'League Script', cursive;
-font-family: 'Galada', cursive;
-
-font-family: 'Londrina Shadow', cursive;
-font-family: 'Londrina Sketch', cursive;
 */
 
 
@@ -63,12 +51,13 @@ font-family: 'Londrina Sketch', cursive;
 }
 
 #taskOrganizer {
+    /*one*/
     font-family: 'Merriweather', serif;
 
 }
 
 #folderz {
-    font-family: 'Yellowtail', cursive;
+
 
 }
 
@@ -77,23 +66,27 @@ font-family: 'Londrina Sketch', cursive;
 }
 
 #work {
+    /*two*/
     font-family: 'Adamina', serif;
 }
 
 #school {
-    font-family: 'Oleo Script', cursive;
+    /* six*/
+    font-family: 'Scheherazade', serif;
 }
 
 #home {
-    font-family: 'Julius Sans One', sans-serif;
+    /*seven*/
+    font-family: 'Limelight', cursive;
 }
 
 #exercise {
-    font-family: 'Cabin Sketch', cursive;
+    font-family: 'Galada', cursive;
 }
 
 #other {
-    font-family: 'Playball', cursive;
+    /*nine*/
+    font-family: 'Londrina Shadow', cursive;
 }
 
 
@@ -150,15 +143,15 @@ font-family: 'Londrina Sketch', cursive;
 }
 
 #toCompleteBtn {
-    font-family: 'Grand Hotel', cursive;
-}
-
-#row2Column4 {
     font-family: 'Cormorant', serif;
 }
 
-#completedBtn {
+#row2Column4 {
+    
+}
 
+#completedBtn {
+    font-family: 'Cormorant', serif;
 }
 
 /*row 3*/
@@ -187,23 +180,25 @@ font-family: 'Londrina Sketch', cursive;
 }
 
 #task {
+    font-family: 'Adamina', serif;
 
 }
 
 #comments {
+    font-family: 'Scheherazade', serif;
 
 }
 
 #timeDue {
-
+    font-family: 'Scheherazade', serif;
 }
 
 #dateDue {
-
+    font-family: 'Scheherazade', serif;
 }
 
 
-/*task one*/
+/*task two*/
 
 #taskTwo {
     background-color: #c1dee2;
