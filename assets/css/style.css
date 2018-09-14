@@ -1,9 +1,56 @@
+
+/*COLOR PALLET*/
+
+/*color pallet #3588
+colorpallets.net
+
+#234a56
+#417d95
+#89b9c5
+#c1dee2
+#dde7dc
+*/
+
+
+
+
+/*FONTS!!!*/
+
+/* 
+font-family: 'Merriweather', serif;
+
+font-family: 'Adamina', serif;
+font-family: 'Oleo Script', cursive;
+font-family: 'Julius Sans One', sans-serif;
+
+font-family: 'Cabin Sketch', cursive;
+font-family: 'Playball', cursive;
+font-family: 'Rufina', serif;
+font-family: 'Fredericka the Great', cursive;
+
+font-family: 'Grand Hotel', cursive;
+font-family: 'Cormorant', serif;
+font-family: 'Pinyon Script', cursive;
+font-family: 'Scheherazade', serif;
+font-family: 'Limelight', cursive;
+
+font-family: 'Dawning of a New Day', cursive;
+font-family: 'Life Savers', cursive;
+font-family: 'Kranky', cursive;
+font-family: 'League Script', cursive;
+font-family: 'Galada', cursive;
+
+font-family: 'Londrina Shadow', cursive;
+font-family: 'Londrina Sketch', cursive;
+*/
+
+
 /*navbar*/
 
 
 /*container*/
 #firstContainer {
-
+    background-color: 
 }
 
 /*row One*/
@@ -11,13 +58,17 @@
 #rowFirst {
 
 }
+#taskOrganizerDiv {
+    background-color: #dde7dc;
+}
 
-#column3Div1Heading {
+#taskOrganizer {
+    font-family: 'Merriweather', serif;
 
 }
 
-#column3Div1subHeading {
-
+#folderz {
+    font-family: 'Yellowtail', cursive;
 
 }
 
@@ -25,24 +76,35 @@
 
 }
 
-#folder1 {
-
+#work {
+    font-family: 'Adamina', serif;
 }
 
-#folder2 {
-
+#school {
+    font-family: 'Oleo Script', cursive;
 }
 
-#folder3 {
-
+#home {
+    font-family: 'Julius Sans One', sans-serif;
 }
+
+#exercise {
+    font-family: 'Cabin Sketch', cursive;
+}
+
+#other {
+    font-family: 'Playball', cursive;
+}
+
+
 
 #column9 {
 
 }
 
 #appName {
-
+    font-family: 'Rufina', serif;
+    color: #234a56;
 }
 
 .quoteDiv{
@@ -50,7 +112,7 @@
 }
 
 #quote {
-
+    font-family: 'Fredericka the Great', cursive;
 }
 
 #addTask {
@@ -112,6 +174,7 @@
 /*task one*/
 
 #taskOne {
+    background-color: #dde7dc;
 
 }
 
@@ -136,16 +199,22 @@
 }
 
 #dateDue {
-    
+
+}
+
+
+/*task one*/
+
+#taskTwo {
+    background-color: #c1dee2;
 }
 
 
 
 
-
-
-
-
+#taskThree {
+    background-color: #89b9c5;
+}
 
 
 
