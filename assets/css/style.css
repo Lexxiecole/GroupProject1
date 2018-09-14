@@ -32,6 +32,11 @@ colorpallets.net
 
 /*navbar*/
 
+#navbar {
+    background-color: white;
+}
+
+
 
 /*container*/
 #firstContainer {
@@ -43,8 +48,22 @@ colorpallets.net
 #rowFirst {
 
 }
+
+
+
+
 #taskOrganizerDiv {
+
+}
+
+#taskOrgDiv {
+    border-style: solid;
+    border-color: #234a56;
     background-color: #dde7dc;
+    font-family: 'Cormorant', serif;
+    color: #234a56;
+    margin: 5px;
+    text-align: center;
 }
 
 #taskOrganizer {
@@ -52,10 +71,26 @@ colorpallets.net
 
 }
 
+#folderzDiv {
+    border-style: solid;
+    border-color: #234a56;
+    background-color: #dde7dc;
+    font-family: 'Cormorant', serif;
+    color: #234a56;
+    margin: 5px;
+}
+
 #folderz {
     font-family: 'Adamina', serif;
+    text-align: center;
+    color: #234a56;
 
 }
+
+
+
+
+
 
 .border {
 
@@ -64,6 +99,7 @@ colorpallets.net
 #work {
     font-family: 'Scheherazade', serif;
 }
+
 
 #school {
     font-family: 'Scheherazade', serif;
@@ -81,8 +117,6 @@ colorpallets.net
     font-family: 'Scheherazade', serif;
 }
 
-
-
 #column9 {
 
 }
@@ -94,6 +128,7 @@ colorpallets.net
 #appName {
     font-family: 'Rufina', serif;
     color: #234a56;
+    margin: 20px;
 }
 
 .quoteDiv{
@@ -108,34 +143,48 @@ colorpallets.net
 
 
 /* inputs */
+
+#inputDiv {
+    margin: 
+}
+
+#formID {
+    margin: 15px;
+}
+
 #addTask1 {
     font-family: 'Rufina', serif;
     color: #234a56;
     font-size: 12px;
+    width: 100%;
 }
 
 #timeDue1 {
     font-family: 'Rufina', serif;
     color: #234a56;
     font-size: 12px;
+    width: 32.825%;
 }
 
 #dateDue1 {
     font-family: 'Rufina', serif;
     color: #234a56;
     font-size: 12px;
+    width: 32.8%;
 }
 
 #folder1 {
     font-family: 'Rufina', serif;
     color: #234a56;
     font-size: 12px;
+    width: 32.8%;
 }
 
 #comments1 {
     font-family: 'Rufina', serif;
     color: #234a56;
     font-size: 12px;
+    width: 86%;
 }
 
 
@@ -146,6 +195,7 @@ colorpallets.net
     border-color: #234a56;
     font-family: 'Rufina', serif;
     color: #234a56;
+    size: 3px;
 }
 
 #rowSecond {
@@ -166,6 +216,7 @@ colorpallets.net
     font-family: 'Cormorant', serif;
     background-color: #234a56;
     color: #dde7ec;
+    margin: 10px;
 }
 
 #row2Column4 {
@@ -176,6 +227,7 @@ colorpallets.net
     font-family: 'Cormorant', serif;
     background-color: #417d95;
     color: #dde7ec;
+    margin: 10px;
 }
 
 /*row 3*/

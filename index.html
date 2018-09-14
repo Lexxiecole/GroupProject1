@@ -29,7 +29,7 @@
 
 <body>
     <!--navbar-->
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-light bg-light" id = "navbar">
         <a class="navbar-brand" href="#">
             <img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
         </a>
@@ -54,11 +54,14 @@
 
                 <div class="col-3 border" id="taskOrganizerDiv">
                     
-                    <h2 id="taskOrganizer">Task Organizer</h2>
+                    <div id = taskOrgDiv>
+                        <h2 id="taskOrganizer">Task Organizer</h2>
+                    </div>
+
+                    <div id = "folderzDiv">
                     <p id="folderz">Folders</p>
                     <div class="border">
                         <ul>
-                            <i class="fas fa-caret-right" id= "work"> work</i>
                             <li id="work">Work</li>
                             <li id="school">School</li>
                             <li id="home">Home</li>
@@ -66,17 +69,22 @@
                             <li id="other">Other</li>
                         </ul>
                     </div>
+                    </div>
+
                 </div>
 
                 <div class="col-9" id="column9">
-                 <form>
+
+                <div id = "inputDiv">
+                 <form id = "form">
                     <input id="addTask1" type="text" placeholder="Add Task">
                     <input id="timeDue1" type="time" placeholder="Time Due">
                     <input id="dateDue1" type="date" placeholder="Date Due">
                     <input id="folder1" type="text" placeholder="Folder">
                     <input id="comments1" type="text" placeholder="Additional comments">
-                    <button id="submitBtn" type="button" class="btn btn-primary btn-sm">Submit</button>
+                    <button id="submitBtn" type="btn" class="btn btn-primary btn-sm">Submit</button>
                 </form>
+                </div>
 
                 <!--row Two-->
                 <div class="row" id="row2">
@@ -116,9 +124,6 @@
                                 <p id="dateDue">date due</p>
                             </div>
                         </div>
-
-
-
                         <!-- something i am thinking of :
 
     should we create JS so that the task one full div class is repeated 
