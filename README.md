@@ -51,7 +51,7 @@ first group project
 
 
 
-
+ <!--can we make fonts change or rotate with the javascript? The fonts are chosen!-->
 
 
 
