@@ -30,43 +30,49 @@
 
     <div class="container" id = "firstContainer">
 
+<!--row-->
         <div class="row" id = "rowFirst">
+
             <div class="col-3 border" id = "column3Div1Heading">
                 <h2 id = "column3Div1Heading">Task Organizer</h2>
                 <p id = "column3Div1SubHeading">Folders</p>
                 <div class="border">
                     <ul>
-                        <li>folder 1</li>
-                        <li>folder 2</li>
-                        <li>folder 3</li>
+                    <li id = "folder1">folder 1</li>
+                    <li id = "folder2"> folder 2</li>
+                    <li id = "folder3">folder 3</li>
                     </ul>
                 </div>
             </div>
-            <div class="col-9">
-                <h1 class="text-center">Focus</h1>
-                <div class="quoteDiv">
-                    <p id="quote"> The most inspiration quote that wasn't very inspirational is the one that you
-                        tell yourself.</p>
-                </div>
 
+            <div class="col-9" id = "column9">
+
+                <h1 class="text-center" id = "appName">Focus</h1>
+                <div class="quoteDiv">
+                    <p id="quote"> The most inspiration quote that wasn't very inspirational is the one that you tell yourself.</p>
+                </div>
 
                 <form>
-                    <input id="add-task" type="text" placeholder="Add Task">
-                    <input id="time-due" type="text" placeholder="Time Due">
-                    <input id="date-due" type="date" placeholder="Date Due">
+                    <input id="addTask" type="text" placeholder="Add Task">
+                    <input id="timeDue" type="text" placeholder="Time Due">
+                    <input id="dateDue" type="date" placeholder="Date Due">
                     <input id="folder" type="text" placeholder="Folder">
+                    <button id="submitBtn" class="btn btn-primary">Submit</button>
                 </form>
 
+<!--row-->
+        <div class="row"  id = "row2">
 
-                <button id="submit" class="btn btn-primary">Submit</button>
-                <div class="row">
-                    <div class="col-8 border">
-                        <h1>To Complete</h1>
-                    </div>
-                    <div class="col-4 border">
-                        <h1>Completed</h1>
-                    </div>
-                </div>
+            <div class="col-8 border" id = "row2Column8">
+                <h1 id = "toCompleteBtn">To Complete</h1>
+            </div>
+
+            <div class="col-4 border" id = row2Column4>
+                <h1 id = "completedBtn">Completed</h1>
+             </div>
+        </div>
+                
+<!--row-->
                 <div class="row">
                     <div class="col-12 border">
                         <!-- this is the first task  -->
