@@ -19,16 +19,16 @@ colorpallets.net
 /* 
 2--TASK--   font-family: 'Adamina', serif; 
 
-4--QUOTE--   font-family: 'Fredericka the Great', cursive;
-7--QUOTE--   font-family: 'Limelight', cursive;
-8--QUOTE--   font-family: 'Galada', cursive;
-9--QUOTE--   font-family: 'Londrina Shadow', cursive;
+4--QUOTE--   font-family: 'Sacramento', cursive;
+
 
 6--COMMENTS, TIME DUE, DATE DUE--   font-family: 'Scheherazade', serif;
 
 1--keep --  font-family: 'Merriweather', serif;
 3--keep--   font-family: 'Rufina', serif;
 5--keep--  font-family: 'Cormorant', serif;
+
+font-family: 'Sacramento', cursive;
 
 */
 
@@ -101,7 +101,9 @@ colorpallets.net
 }
 
 #quote {
-    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Sacramento', cursive;
+    font-size: 25px;
+    color: #234a56;
 }
 
 #addTask {
@@ -181,20 +183,24 @@ colorpallets.net
 
 #task {
     font-family: 'Adamina', serif;
+    color: #234a56;
 
 }
 
 #comments {
     font-family: 'Scheherazade', serif;
+    color: #234a56;
 
 }
 
 #timeDue {
     font-family: 'Scheherazade', serif;
+    color: #234a56;
 }
 
 #dateDue {
     font-family: 'Scheherazade', serif;
+    color: #234a56;
 }
 
 
