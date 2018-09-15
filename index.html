@@ -13,125 +13,196 @@
     <!--css page link-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!--font linke-->
-
+    <link href="https://fonts.googleapis.com/css?family=Adamina|Cabin+Sketch|Cookie|Cormorant|Dawning+of+a+New+Day|Fredericka+the+Great|Galada|Grand+Hotel|Julius+Sans+One|Kranky|League+Script|Life+Savers|Limelight|Londrina+Shadow|Londrina+Sketch|Merriweather|Oleo+Script|Pinyon+Script|Playball|Rufina|Sacramento|Scheherazade|Yellowtail"
+        rel="stylesheet">
     <!--javascript link-->
 
     <!--javascript page link-->
 
     <!--font awesome link-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
 
     <title>Focus</title>
-
 </head>
 
+
 <body>
+    <!--navbar-->
+    <nav class="navbar navbar-light bg-light" id = "navbar">
+        <a class="navbar-brand" href="#">
+            <img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+        </a>
+    </nav>
 
-    <nav></nav>
 
-    <div class="container">
+    <div class="container" id="firstContainer">
 
+        <!--row One-->
         <div class="row">
-            <div class="col-3 border">
-                <h2>Task Organizer</h2>
-                <p>Folders</p>
-                <div class="border">
-                    <ul>
-                        <li>folder 1</li>
-                        <li>folder 2</li>
-                        <li>folder 3</li>
-                    </ul>
+            <div class="col-12 text-center">
+                <!-- moved header to top -->
+                <div id="header">
+                    <h1 id="appName">F O C U S</h1>
+                    <div class="quoteDiv">
+                        <p id="quote"> "Infuse your life with action. Don't wait for it to happen. Make it happen. Make your own future." </p>
+                    </div>
                 </div>
             </div>
-            <div class="col-9">
-                <h1 class="text-center">Focus</h1>
-                <div class="quoteDiv">
-                    <p id="quote"> The most inspiration quote that wasn't very inspirational is the one that you
-                        tell yourself.</p>
+            <div class="row" id="rowFirst">
+
+                <div class="col-3 border" id="taskOrganizerDiv">
+                    
+                    <div id = taskOrgDiv>
+                        <h2 id="taskOrganizer">Task Organizer</h2>
+                    </div>
+
+                    <div id = "folderzDiv">
+                    <p id="folderz">Folders</p>
+                    <div class="border">
+                        <ul>
+                            <li id="work">Work</li>
+                            <li id="school">School</li>
+                            <li id="home">Home</li>
+                            <li id="exercise">Exercise</li>
+                            <li id="other">Other</li>
+                        </ul>
+                    </div>
+                    </div>
+
                 </div>
 
+                <div class="col-9" id="column9">
 
-                <form>
-                    <input id="add-task" type="text" placeholder="Add Task">
-                    <input id="time-due" type="text" placeholder="Time Due">
-                    <input id="date-due" type="date" placeholder="Date Due">
-                    <input id="folder" type="text" placeholder="Folder">
+                <div id = "inputDiv">
+                 <form id = "form">
+                    <input id="addTask1" type="text" placeholder="Add Task">
+                    <input id="timeDue1" type="time" placeholder="Time Due">
+                    <input id="dateDue1" type="date" placeholder="Date Due">
+                    <input id="folder1" type="text" placeholder="Folder">
+                    <input id="comments1" type="text" placeholder="Additional comments">
+                    <button id="submitBtn" type="btn" class="btn btn-primary btn-sm">Submit</button>
                 </form>
+                </div>
 
+                <!--row Two-->
+                <div class="row" id="row2">
 
-                <button id="submit" class="btn btn-primary">Submit</button>
-                <div class="row">
-                    <div class="col-8 border">
-                        <h1>To Complete</h1>
+                    <div class="col-8 border" id="row2Column8">
+                        <!--javascript: border of same color goes around tasks when to complete is on and when completed is on. border color switches-->
+                        <h1 id="toCompleteBtn">To Complete</h1>
                     </div>
-                    <div class="col-4 border">
-                        <h1>Completed</h1>
+
+                    <div class="col-4 border" id=row2Column4>
+                        <h1 id="completedBtn">Completed</h1>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12 border">
-                        <!-- this is the first task  -->
-                        <div class="row border">
-                            <div class="col-2">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        checkbox
-                                    </label>
+
+                <!--row Three-->
+                <div class="row" id="row3">
+                    <div class="col-12 border" id="row3Column12">
+
+                        <!-- Task one  -->
+                        <div class="row border" id="taskOne">
+
+                            <div class="col-2" id="task1Col2">
+                                <div class="form-check" id="task1Col2Form">
+                                    <!--js number the checkboxes--><input class="form-check-input" type="checkbox"
+                                        value="" id="checkboxID">
                                 </div>
-                            </div>
-                            <div class="col-8">
-                                <p>Task</p>
-                                <p>comments</p>
-                            </div>
-                            <div class="col-2">
-                                <p>time due</p>
-                                <p>date due</p>
-                            </div>
-                        </div>
-                        <!-- the second one -->
-                        <div class="row border">
-                            <div class="col-2">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-                                    <label class="form-check-label" for="defaultCheck2">
-                                        checkbox
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-8">
-                                <p>Task</p>
-                                <p>comments</p>
-                            </div>
-                            <div class="col-2">
-                                <p>time due</p>
-                                <p>date due</p>
                             </div>
 
-                        </div>
-                        <!-- the third -->
-                        <div class="row border">
-                            <div class="col-2">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        checkbox
-                                    </label>
-                                </div>
-                            </div>
                             <div class="col-8">
-                                <p>Task</p>
-                                <p>comments</p>
+                                <p id="task1"> Do the laundry!</p>
+                                <p id="comments1">MAKE SURE YOU LOAD THE WHITES SO YOU HAVE SOMETHING CUTE TO WEAR THIS WEEKEND!</p>
+                                <!-- p ID= "comments", line 92---JAVASCRIPT SHOULD FORCE THIS TEXT TO STAY THE SAME FORNT, BUT ALWAYS DISPLAY IN CAPS-->
                             </div>
+
                             <div class="col-2">
-                                <p>time due</p>
-                                <p>date due</p>
+                                <p id="timeDue1">10:00 P.M.</p>
+                                <p id="dateDue1">09/15/2018</p>
                             </div>
+                        </div>
+                        <!-- something i am thinking of :
+
+    should we create JS so that the task one full div class is repeated 
+    over and over when the submit button is pushed? so basically rhe same
+    css wil go through, but the action wil be repeated? 
+
+    Also, it should be noted that 
+        TASK
+        COMMENTS
+        TIME DUE
+        DATE DUE
+    should be where the user puts the information in. that should show the 
+    user input
+
+
+-->
+
+
+<!--task two-->
+                <div class="row border" id="taskTwo">
+
+                        <div class="col-2" id="task2Col2">
+                            <div class="form-check" id="task2Col2Form">
+                                <input class="form-check-input" type="checkbox"
+                                    value="" id="checkboxID">
+                            </div>
+                        </div>
+
+                        <div class="col-8">
+                            <p id="task2"> Chapter 9 homework</p>
+                            <p id="comments2">YOU HAVE TO GET AN A ON THIS HOMEWORK!</p>
+                        </div>
+
+                        <div class="col-2">
+                            <p id="timeDue2">10:00 P.M.</p>
+                            <p id="dateDue2">09/16/2018</p>
                         </div>
                     </div>
+
+
+
+                        <!--task 3-->
+
+
+
+                        <div class="row border" id="taskThree">
+
+                                <div class="col-2" id="task3Col2">
+                                    <div class="form-check" id="task3Col2Form">
+                                        <input class="form-check-input" type="checkbox"
+                                            value="" id="checkboxID">
+                                    </div>
+                                </div>
+        
+                                <div class="col-8">
+                                    <p id="task3"> Spin Class</p>
+                                    <p id="comments3">DON'T FORGET TO RENEW YOUR MONTHLY CONTRACT!</p>
+                                </div>
+        
+                                <div class="col-2">
+                                    <p id="timeDue3">10:00 A.M.</p>
+                                    <p id="dateDue3">09/17/2018</p>
+                                </div>
+                            </div>
+
+
+
+
+                    </div>
                 </div>
+                </div>
+
             </div>
+            <!--divrowfirst-->
+
         </div>
     </div>
+    <!--divclass-->
+
+    <!--JAVASCRIPT-->
     <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 

@@ -1,0 +1,349 @@
+
+/*COLOR PALLET*/
+
+/*color pallet #3588
+colorpallets.net
+
+#234a56
+#417d95
+#89b9c5
+#c1dee2
+#dde7dc
+*/
+
+
+
+
+/*FONTS!!!*/
+
+/* 
+2--TASK & FOLDERS--   font-family: 'Adamina', serif; 
+
+4--QUOTE--   font-family: 'Sacramento', cursive;
+
+
+6--COMMENTS, TIME DUE, DATE DUE, FOLDER NAMES--   font-family: 'Scheherazade', serif;
+
+1--keep --  font-family: 'Merriweather', serif;
+3--keep--   font-family: 'Rufina', serif;
+5--TASK ORGANIZER & TO COMPLETE/COMPLETED--  font-family: 'Cormorant', serif;
+*/
+
+
+/*navbar*/
+
+#navbar {
+    background-color: white;
+}
+
+
+
+/*container*/
+#firstContainer {
+    background-color: 
+}
+
+/*row One*/
+
+#rowFirst {
+
+}
+
+
+
+
+#taskOrganizerDiv {
+
+}
+
+#taskOrgDiv {
+    border-style: solid;
+    border-color: #234a56;
+    background-color: #dde7dc;
+    font-family: 'Cormorant', serif;
+    color: #234a56;
+    margin: 5px;
+    text-align: center;
+}
+
+#taskOrganizer {
+    font-family: 'Cormorant', serif;
+
+}
+
+#folderzDiv {
+    border-style: solid;
+    border-color: #234a56;
+    background-color: #dde7dc;
+    font-family: 'Cormorant', serif;
+    color: #234a56;
+    margin: 5px;
+}
+
+#folderz {
+    font-family: 'Adamina', serif;
+    text-align: center;
+    color: #234a56;
+
+}
+
+
+
+
+
+
+.border {
+
+}
+
+#work {
+    font-family: 'Scheherazade', serif;
+}
+
+
+#school {
+    font-family: 'Scheherazade', serif;
+}
+
+#home {
+    font-family: 'Scheherazade', serif;
+}
+
+#exercise {
+    font-family: 'Scheherazade', serif;
+}
+
+#other {
+    font-family: 'Scheherazade', serif;
+}
+
+#column9 {
+
+}
+
+#header {
+
+}
+
+#appName {
+    font-family: 'Rufina', serif;
+    color: #234a56;
+    margin: 20px;
+}
+
+.quoteDiv{
+
+}
+
+#quote {
+    font-family: 'Sacramento', cursive;
+    font-size: 25px;
+    color: #234a56;
+}
+
+
+/* inputs */
+
+#inputDiv {
+    margin: 
+}
+
+#formID {
+    margin: 15px;
+}
+
+#addTask1 {
+    font-family: 'Rufina', serif;
+    color: #234a56;
+    font-size: 12px;
+    width: 100%;
+}
+
+#timeDue1 {
+    font-family: 'Rufina', serif;
+    color: #234a56;
+    font-size: 12px;
+    width: 33%;
+}
+
+#dateDue1 {
+    font-family: 'Rufina', serif;
+    color: #234a56;
+    font-size: 12px;
+    width: 33%;
+}
+
+#folder1 {
+    font-family: 'Rufina', serif;
+    color: #234a56;
+    font-size: 12px;
+    width: 32.75%;
+}
+
+#comments1 {
+    font-family: 'Rufina', serif;
+    color: #234a56;
+    font-size: 12px;
+    width: 89%;
+}
+
+
+/* submit button */
+
+#submitBtn {
+    background-color: white;
+    border-color: #234a56;
+    font-family: 'Rufina', serif;
+    color: #234a56;
+    size: 3px;
+}
+
+#rowSecond {
+
+}
+
+/*row 2*/
+
+#row2 {
+
+}
+
+#row2Column8 {
+    background-color: #234a56;
+}
+
+#toCompleteBtn {
+    font-family: 'Cormorant', serif;
+    background-color: #234a56;
+    color: #dde7ec;
+    margin: 10px;
+}
+
+#row2Column4 {
+    background-color: #417d95;
+}
+
+#completedBtn {
+    font-family: 'Cormorant', serif;
+    background-color: #417d95;
+    color: #dde7ec;
+    margin: 10px;
+}
+
+/*row 3*/
+
+#row3 {
+
+}
+
+#row3Column12 {
+
+}
+
+/*task one*/
+
+#taskOne {
+    background-color: #c1dee2;
+
+}
+
+#task1Col2 {
+
+}
+
+#task1Col2Form {
+
+}
+
+#task1 {
+    font-family: 'Adamina', serif;
+    color: #234a56;
+
+}
+
+#comments1 {
+    font-family: 'Scheherazade', serif;
+    color: #234a56;
+
+}
+
+#timeDue1 {
+    font-family: 'Scheherazade', serif;
+    color: #234a56;
+}
+
+#dateDue1 {
+    font-family: 'Scheherazade', serif;
+    color: #234a56;
+}
+
+
+/*task two*/
+
+#taskTwo {
+    background-color: #89b9c5;
+    font-family: 'Adamina', serif;
+    color: #234a56;
+}
+
+#task2 {
+    font-family: 'Adamina', serif;
+    color: #234a56;
+
+}
+
+#comments2 {
+    font-family: 'Scheherazade', serif;
+    color: #234a56;
+
+}
+
+#timeDue2 {
+    font-family: 'Scheherazade', serif;
+    color: #234a56;
+}
+
+#dateDue2 {
+    font-family: 'Scheherazade', serif;
+    color: #234a56;
+}
+
+/*TASK THREE*/
+
+
+#taskThree {
+    background-color: #c1dee2;
+    font-family: 'Adamina', serif;
+    color: #234a56;
+}
+
+#task3 {
+    font-family: 'Adamina', serif;
+    color: #234a56;
+
+}
+
+#comments3 {
+    font-family: 'Scheherazade', serif;
+    color: #234a56;
+
+}
+
+#timeDue3 {
+    font-family: 'Scheherazade', serif;
+    color: #234a56;
+}
+
+#dateDue3 {
+    font-family: 'Scheherazade', serif;
+    color: #234a56;
+}
+
+
+
+
+
+
+
+
+
