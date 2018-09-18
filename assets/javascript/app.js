@@ -1,6 +1,8 @@
 var toDoCount = 0;
 
 var makeTask = function () {
+    toDoCount++
+
     var rowDiv = $("<div>")
     var checkCol = $("<div>")
     var formDiv = $("<div>")
@@ -20,7 +22,7 @@ var makeTask = function () {
     datePara.text($("#dateInput").val().trim())
 
     rowDiv.addClass("row border")
-    rowDiv.attr("id", "item-", + toDoCount)
+    rowDiv.attr("id", "item-" + toDoCount)
     checkCol.addClass("col-2")
     formDiv.addClass("form-check")
     taskCol.addClass("col-8")
