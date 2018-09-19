@@ -1,13 +1,25 @@
+var config = {
+    apiKey: "AIzaSyAlUnK57pmSv5MxlaZNXKYfRWg7rbgExn0",
+    authDomain: "focus-project-636cf.firebaseapp.com",
+    databaseURL: "https://focus-project-636cf.firebaseio.com",
+    projectId: "focus-project-636cf",
+    storageBucket: "",
+    messagingSenderId: "665041759126"
+};
+firebase.initializeApp(config);
+
+var database = firebase.database();
+
 var toDoCount = 0;
 
-setInterval(function showTime () {
+setInterval(function showTime() {
     var d = new Date();
-    document.getElementById("current-time").textContent= ("Current Time: " + d);
+    document.getElementById("current-time").textContent = ("Current Time: " + d);
     console.log(d);
- }, 1000);
- showTime();
- 
-var makeTask = function () {
+}, 1000);
+showTime();
+
+var makeTask = function (snap) {
     toDoCount++
 
     var rowDiv = $("<div>")
@@ -21,12 +33,17 @@ var makeTask = function () {
     var endTimePara = $("<p>")
     var datePara = $("<p>")
     // var checkbox = $("<input>")
+    var toDoTask = snap.val().formToDoTask;
+    var addSetDate = snap.val().formAddSetDate;
+    var addComments = snap.val().formAddComments;
+    var addStartTime = snap.val().formAddStartTIme;
+    var addEndTime = snap.val().formAddEndTime;
 
-    taskPara.text($("#taskInput").val().trim())
-    commentsPara.text($("#commentsInput").val().trim())
-    startTimePara.text($("#startTimeInput").val().trim())
-    endTimePara.text($("#endTimeInput").val().trim())
-    datePara.text($("#dateInput").val().trim())
+    taskPara.text(toDoTask)
+    commentsPara.text(addComments)
+    startTimePara.text(addStartTime)
+    endTimePara.text(addEndTime)
+    datePara.text(addSetDate)
 
     rowDiv.addClass("row border")
     rowDiv.attr("id", "item-" + toDoCount)
@@ -47,7 +64,7 @@ var makeTask = function () {
     toDoComplete.attr("data-to-do", toDoCount);
     toDoComplete.addClass("checkbox");
     toDoComplete.append("✓");
-    
+
     formDiv.append(toDoComplete)
 
     // formDiv.append(checkbox)
@@ -61,22 +78,43 @@ var makeTask = function () {
     rowDiv.append(checkCol)
     rowDiv.append(taskCol)
     rowDiv.append(timeCol)
-
-    $("#taskInput").val(" ");
-    $("#startTimeInput").val(" ");
-    $("#endTimeInput").val(" ");
-    $("#dateInput").val(" ");
-    $("#commentsInput").val(" ");
-
+    
     $("#taskDiv").append(rowDiv)
-
+   
 }
 
 
 //submit button clicked then do this function
 $("#submitBtn").on("click", function (event) {
     event.preventDefault();
-    makeTask();
+
+    var task = $("#taskInput").val().trim()
+    var comments = $("#commentsInput").val().trim()
+    var startTime = $("#startTimeInput").val().trim()
+    var endTime = $("#endTimeInput").val().trim()
+    var dateValue = $("#dateInput").val().trim()
+
+    var taskData = {
+
+        formtoDoCount: toDoCount,
+        formToDoTask: task,
+        formAddSetDate: dateValue,
+        formAddComments: comments,
+        formAddStartTIme: startTime,
+        formAddEndTime: endTime,
+    
+    };
+    
+    console.log(taskData);
+    
+    database.ref("Ver2").push(taskData);
+
+    $("#taskInput").val(" ");
+    $("#startTimeInput").val(" ");
+    $("#endTimeInput").val(" ");
+    $("#dateInput").val(" ");
+    $("#commentsInput").val(" ");
+    
     // var toDoTask = $("#taskInput").val().trim();
 
     // var thisTask = $("<p>");
@@ -138,6 +176,16 @@ $("#submitBtn").on("click", function (event) {
     // $(".to-do-list").append(thisTask);
 
 });
+
+
+database.ref("Ver2").on("child_added", function (childSnapshot) {
+    makeTask(childSnapshot)
+
+    // $("#tableContents").append("<tr><td>" + '<button class="btn-primary"><i class="fa fa-check" id= "delete" aria-hidden="true"></i></i></button>' + "</td><td>" + addSetDate + "</td><td>" + toDoTask + "</td><td>" +
+    //     addStartTime + "</td><td>" + addEndTime + "</td><td>" + addComments + "</td></tr>");
+
+
+})
 
 
 //remove item
