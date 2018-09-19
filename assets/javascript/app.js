@@ -6,6 +6,7 @@ var config = {
     storageBucket: "",
     messagingSenderId: "665041759126"
 };
+
 firebase.initializeApp(config);
 
 var database = firebase.database();
@@ -15,9 +16,9 @@ var toDoCount = 0;
 setInterval(function showTime() {
     var d = new Date();
     document.getElementById("current-time").textContent = ("Current Time: " + d);
-    console.log(d);
+    // console.log(d);
 }, 1000);
-showTime();
+// showTime();
 
 var makeTask = function (snap) {
     toDoCount++
@@ -114,7 +115,7 @@ $("#submitBtn").on("click", function (event) {
     $("#endTimeInput").val(" ");
     $("#dateInput").val(" ");
     $("#commentsInput").val(" ");
-    
+
     // var toDoTask = $("#taskInput").val().trim();
 
     // var thisTask = $("<p>");
