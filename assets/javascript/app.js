@@ -1,5 +1,12 @@
 var toDoCount = 0;
 
+setInterval(function showTime () {
+    var d = new Date();
+    document.getElementById("current-time").textContent= ("Current Time: " + d);
+    console.log(d);
+ }, 1000);
+ showTime();
+ 
 var makeTask = function () {
     toDoCount++
 
