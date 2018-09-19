@@ -52,8 +52,15 @@ colorpallets.net
 
 
 
+
+
 #taskOrganizerDiv {
 
+}
+
+#tableHeader {
+    background-color: #234a56;
+    color: white;
 }
 
 #taskOrgDiv {
@@ -338,6 +345,14 @@ colorpallets.net
     font-family: 'Scheherazade', serif;
     color: #234a56;
 }
+
+#check {
+    position: absolute;
+    right: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+
 
 
 
