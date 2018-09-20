@@ -188,13 +188,24 @@ database.ref("Ver2").on("child_added", function (childSnapshot) {
 
 })
 
-
+var checked = false
 //remove item
 $(document.body).on("click", ".checkbox", function () {
     var thisNumber = $(this).attr("data-to-do");
+    var thisDiv = $("#item-" + thisNumber)
 
-    $("#item-" + thisNumber).remove();
-    console.log("click")
+    if (!checked) {
+        thisDiv.removeClass("taskBack")
+        thisDiv.addClass("checkTaskBack")
+        checked = true
+    }
+    else if (checked) {
+        thisDiv.removeClass("checkTaskBack")
+        thisDiv.addClass("taskBack")
+        checked = false
+    }
+
+    // console.log("click")
 });
 
 
