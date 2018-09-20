@@ -286,6 +286,11 @@ colorpallets.net
     font-family: 'Adamina', serif;
     color: #234a56;
 }
+.taskBack {
+    background-color: #89b9c5;
+    font-family: 'Adamina', serif;
+    color: #234a56;
+}
 
 /* #task2 {
     font-family: 'Adamina', serif;
@@ -339,28 +344,30 @@ colorpallets.net
     font-family: 'Scheherazade', serif;
     color: #234a56;
 } */
-#task {
+#task .task {
     font-family: 'Adamina', serif;
     color: #234a56;
 
 }
 
-#comments {
+#comments .comments {
     font-family: 'Scheherazade', serif;
     color: #234a56;
 
 }
 
-#timeDue {
+#timeDue .timeDue {
     font-family: 'Scheherazade', serif;
     color: #234a56;
 }
 
-#dateDue {
+#dateDue .dateDue {
     font-family: 'Scheherazade', serif;
     color: #234a56;
 }
-
+.checkbox {
+    margin-top: 20px;
+}
 
 
 
