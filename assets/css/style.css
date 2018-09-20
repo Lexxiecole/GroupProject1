@@ -40,7 +40,7 @@ colorpallets.net
 
 /*container*/
 #firstContainer {
-    background-color: 
+    /* background-color:  */
 }
 
 /*row One*/
@@ -145,42 +145,42 @@ colorpallets.net
 /* inputs */
 
 #inputDiv {
-    margin: 
+    /* margin:  */
 }
 
 #formID {
     margin: 15px;
 }
 
-#addTask1 {
+#taskInput {
     font-family: 'Rufina', serif;
     color: #234a56;
     font-size: 12px;
     width: 100%;
 }
 
-#timeDue1 {
+.timeInput {
     font-family: 'Rufina', serif;
     color: #234a56;
     font-size: 12px;
     width: 33%;
 }
 
-#dateDue1 {
+#dateInput {
     font-family: 'Rufina', serif;
     color: #234a56;
     font-size: 12px;
     width: 33%;
 }
 
-#folder1 {
+#folderInput {
     font-family: 'Rufina', serif;
     color: #234a56;
     font-size: 12px;
     width: 32.75%;
 }
 
-#comments1 {
+#commentsInput {
     font-family: 'Rufina', serif;
     color: #234a56;
     font-size: 12px;
@@ -254,8 +254,9 @@ colorpallets.net
 #task1Col2Form {
 
 }
+/* Possibly Unneccessary below, commented out for now */
 
-#task1 {
+/* #task1 {
     font-family: 'Adamina', serif;
     color: #234a56;
 
@@ -267,15 +268,15 @@ colorpallets.net
 
 }
 
-#timeDue1 {
+#timeDueP1 {
     font-family: 'Scheherazade', serif;
     color: #234a56;
 }
 
-#dateDue1 {
+#dateDueP1 {
     font-family: 'Scheherazade', serif;
     color: #234a56;
-}
+} */
 
 
 /*task two*/
@@ -285,8 +286,13 @@ colorpallets.net
     font-family: 'Adamina', serif;
     color: #234a56;
 }
+.taskBack {
+    background-color: #89b9c5;
+    font-family: 'Adamina', serif;
+    color: #234a56;
+}
 
-#task2 {
+/* #task2 {
     font-family: 'Adamina', serif;
     color: #234a56;
 
@@ -298,15 +304,15 @@ colorpallets.net
 
 }
 
-#timeDue2 {
+#timeDueP2 {
     font-family: 'Scheherazade', serif;
     color: #234a56;
 }
 
-#dateDue2 {
+#dateDueP2 {
     font-family: 'Scheherazade', serif;
     color: #234a56;
-}
+} */
 
 /*TASK THREE*/
 
@@ -317,7 +323,7 @@ colorpallets.net
     color: #234a56;
 }
 
-#task3 {
+/* #task3 {
     font-family: 'Adamina', serif;
     color: #234a56;
 
@@ -329,17 +335,39 @@ colorpallets.net
 
 }
 
-#timeDue3 {
+#timeDueP3 {
     font-family: 'Scheherazade', serif;
     color: #234a56;
 }
 
-#dateDue3 {
+#dateDueP3 {
+    font-family: 'Scheherazade', serif;
+    color: #234a56;
+} */
+#task .task {
+    font-family: 'Adamina', serif;
+    color: #234a56;
+
+}
+
+#comments .comments {
+    font-family: 'Scheherazade', serif;
+    color: #234a56;
+
+}
+
+#timeDue .timeDue {
     font-family: 'Scheherazade', serif;
     color: #234a56;
 }
 
-
+#dateDue .dateDue {
+    font-family: 'Scheherazade', serif;
+    color: #234a56;
+}
+.checkbox {
+    margin-top: 20px;
+}
 
 
 
