@@ -378,6 +378,11 @@ colorpallets.net
     padding: 20px;
     color: #234a56;
 }
+.delete {
+    position: absolute;
+    right: 10px;
+    margin-top: 20px;
+}
 
 
 

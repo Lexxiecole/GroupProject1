@@ -65,6 +65,12 @@ var makeTask = function (snap) {
     toDoComplete.attr("data-to-do", toDoCount);
     toDoComplete.addClass("checkbox");
     toDoComplete.append("✓");
+    
+    var deleteTask = $("<button id='x'>");
+    deleteTask.attr("data-to-delete", toDoCount);
+    deleteTask.addClass("delete");
+    deleteTask.append("x");
+    timeCol.append(deleteTask);
 
     formDiv.append(toDoComplete)
 
@@ -206,6 +212,13 @@ $(document.body).on("click", ".checkbox", function () {
     }
 
     // console.log("click")
+});
+$(document.body).on("click", ".delete", function () {
+    var thisNumber = $(this).attr("data-to-delete");
+
+    $("#item-" + thisNumber).remove();
+    ref.child(key).remove();
+    console.log("click")
 });
 
 
