@@ -152,40 +152,40 @@ colorpallets.net
     margin: 15px;
 }
 
+
 #taskInput {
     font-family: 'Rufina', serif;
     color: #234a56;
     font-size: 12px;
-    width: 100%;
+    width:55%;
+}
+
+#inputDiv {
+    font-family: 'Scheherazade', serif;
+    align: center;
+
+
 }
 
 .timeInput {
     font-family: 'Rufina', serif;
     color: #234a56;
     font-size: 12px;
-    width: 33%;
+    width: 15%;
 }
 
-#dateInput {
-    font-family: 'Rufina', serif;
-    color: #234a56;
-    font-size: 12px;
-    width: 33%;
-}
-
-#folderInput {
-    font-family: 'Rufina', serif;
-    color: #234a56;
-    font-size: 12px;
-    width: 32.75%;
+#datedue {
+    font-family: 'Scheherazade', serif;
+    float: left;
 }
 
 #commentsInput {
     font-family: 'Rufina', serif;
     color: #234a56;
     font-size: 12px;
-    width: 89%;
+    width: 41%;
 }
+
 
 
 /* submit button */
