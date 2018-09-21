@@ -287,9 +287,15 @@ colorpallets.net
     color: #234a56;
 }
 .taskBack {
+    background-color: #c1dee2;
+    font-family: 'Adamina', serif;
+    color: #234a56;
+}
+.checkTaskBack {
     background-color: #89b9c5;
     font-family: 'Adamina', serif;
     color: #234a56;
+    text-decoration: line-through;
 }
 
 /* #task2 {
@@ -366,6 +372,15 @@ colorpallets.net
     color: #234a56;
 }
 .checkbox {
+    margin-top: 20px;
+}
+#current-time {
+    padding: 20px;
+    color: #234a56;
+}
+.delete {
+    position: absolute;
+    right: 10px;
     margin-top: 20px;
 }
 
