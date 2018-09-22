@@ -93,8 +93,6 @@ var makeTask = function (snap) {
 
 //submit button clicked then do this function
 $(document).on("click", "#submitBtn", function (event) {
-    // event.preventDefault();
-
     toDoCount++
 
     var task = $("#taskInput").val().trim()
@@ -150,10 +148,6 @@ database.ref("items").startAt('00:00').on("child_added", function (childSnapshot
 })
 
 
-
-
-
-
 var checked = false
 //remove item
 $(document.body).on("click", ".checkbox", function () {
@@ -178,7 +172,6 @@ $(document).on("click", ".delete", function () {
     console.log(thisNumber)
     $("#item-" + thisNumber).remove();
     database.ref("items/item" + thisNumber).remove()
-    // ref.child(key).remove();
     console.log("click")
 });
 

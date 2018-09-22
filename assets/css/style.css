@@ -1,6 +1,6 @@
-/*COLOR PALLET*/
+/*COLOR PALLET
 
-/*color pallet #3588
+color pallet #3588
 colorpallets.net
 
 #234a56
@@ -8,51 +8,16 @@ colorpallets.net
 #89b9c5
 #c1dee2
 #dde7dc
-*/
 
-
-
-
-/*FONTS!!!*/
-
-/* 
+FONTS!!!
 2--TASK & FOLDERS--   font-family: 'Adamina', serif; 
-
 4--QUOTE--   font-family: 'Sacramento', cursive;
-
-
 6--COMMENTS, TIME DUE, DATE DUE, FOLDER NAMES--   font-family: 'Scheherazade', serif;
-
-1--keep --  font-family: 'Merriweather', serif;
-3--keep--   font-family: 'Rufina', serif;
-5--TASK ORGANIZER & TO COMPLETE/COMPLETED--  font-family: 'Cormorant', serif;
 */
 
-
-/*navbar*/
 
 #navbar {
     background-color: white;
-}
-
-
-
-/*container*/
-#firstContainer {
-    /* background-color:  */
-}
-
-/*row One*/
-
-#rowFirst {
-
-}
-
-
-
-
-#taskOrganizerDiv {
-
 }
 
 #taskOrgDiv {
@@ -70,59 +35,6 @@ colorpallets.net
 
 }
 
-#folderzDiv {
-    border-style: solid;
-    border-color: #234a56;
-    background-color: #dde7dc;
-    font-family: 'Cormorant', serif;
-    color: #234a56;
-    margin: 5px;
-}
-
-#folderz {
-    font-family: 'Adamina', serif;
-    text-align: center;
-    color: #234a56;
-
-}
-
-
-
-
-
-
-.border {
-
-}
-
-#work {
-    font-family: 'Scheherazade', serif;
-}
-
-
-#school {
-    font-family: 'Scheherazade', serif;
-}
-
-#home {
-    font-family: 'Scheherazade', serif;
-}
-
-#exercise {
-    font-family: 'Scheherazade', serif;
-}
-
-#other {
-    font-family: 'Scheherazade', serif;
-}
-
-#column9 {
-
-}
-
-#header {
-
-}
 
 #appName {
     font-family: 'Rufina', serif;
@@ -130,9 +42,6 @@ colorpallets.net
     margin: 20px;
 }
 
-.quoteDiv{
-
-}
 
 #quote {
     font-family: 'Sacramento', cursive;
@@ -144,32 +53,24 @@ colorpallets.net
 /* inputs */
 
 #inputDiv {
-    /* margin:  */
-}
-
-#formID {
-    margin: 15px;
+    font-family: 'Scheherazade', serif;
+    text-align: center;
+    color: #234a56;
+    margin: 13px;
 }
 
 
 #taskInput {
     font-family: 'Rufina', serif;
     color: #234a56;
-    font-size: 12px;
-    width:55%;
-}
-
-#inputDiv {
-    font-family: 'Scheherazade', serif;
-    align: center;
-
-
+    font-size: 13px;
+    width:59.5%;
 }
 
 .timeInput {
     font-family: 'Rufina', serif;
     color: #234a56;
-    font-size: 12px;
+    font-size: 13px;
     width: 15%;
 }
 
@@ -181,10 +82,9 @@ colorpallets.net
 #commentsInput {
     font-family: 'Rufina', serif;
     color: #234a56;
-    font-size: 12px;
-    width: 41%;
+    font-size: 13px;
+    width: 45%;
 }
-
 
 
 /* submit button */
@@ -197,130 +97,49 @@ colorpallets.net
     size: 3px;
 }
 
-#rowSecond {
-
-}
-
-/*row 2*/
-
-#row2 {
-
-}
-
 #row2Column8 {
     background-color: #234a56;
 }
 
 #toCompleteBtn {
-    font-family: 'Cormorant', serif;
+    font-family: 'Rufina', serif;
     background-color: #234a56;
     color: #dde7ec;
     margin: 10px;
+    font-size: 32px;
 }
 
 #row2Column4 {
     background-color: #417d95;
 }
 
-#completedBtn {
-    font-family: 'Cormorant', serif;
-    background-color: #417d95;
-    color: #dde7ec;
-    margin: 10px;
-}
 
-/*row 3*/
 
-#row3 {
 
-}
 
-#row3Column12 {
 
-}
 
-/*task one*/
+/*javascript*/
 
-#taskOne {
+.taskBack {
     background-color: #c1dee2;
-
-}
-
-#task1Col2 {
-
-}
-
-#task1Col2Form {
-
-}
-/* Possibly Unneccessary below, commented out for now */
-
-/* #task1 {
-    font-family: 'Adamina', serif;
-    color: #234a56;
-
-}
-
-#comments1 {
     font-family: 'Scheherazade', serif;
     color: #234a56;
-
+    font-size: 20px;
 }
 
-#timeDueP1 {
-    font-family: 'Scheherazade', serif;
-    color: #234a56;
-}
+.checkTaskBack {
+    background-color: #89b9c5;
 
-#dateDueP1 {
-    font-family: 'Scheherazade', serif;
-    color: #234a56;
-} */
 
 
 /*task two*/
 
-#taskTwo {
-    background-color: #89b9c5;
-    font-family: 'Adamina', serif;
-    color: #234a56;
-}
-.taskBack {
-    background-color: #c1dee2;
-    font-family: 'Adamina', serif;
-    color: #234a56;
-}
-.checkTaskBack {
-    background-color: #89b9c5;
-    font-family: 'Adamina', serif;
+
+    font-family: 'Scheherazade', serif;
     color: #234a56;
     text-decoration: line-through;
 }
-
-/* #task2 {
-    font-family: 'Adamina', serif;
-    color: #234a56;
-
-}
-
-#comments2 {
-    font-family: 'Scheherazade', serif;
-    color: #234a56;
-
-}
-
-#timeDueP2 {
-    font-family: 'Scheherazade', serif;
-    color: #234a56;
-}
-
-#dateDueP2 {
-    font-family: 'Scheherazade', serif;
-    color: #234a56;
-} */
-
-/*TASK THREE*/
-
 
 #taskThree {
     background-color: #c1dee2;
@@ -328,37 +147,14 @@ colorpallets.net
     color: #234a56;
 }
 
-/* #task3 {
-    font-family: 'Adamina', serif;
-    color: #234a56;
-
-}
-
-#comments3 {
-    font-family: 'Scheherazade', serif;
-    color: #234a56;
-
-}
-
-#timeDueP3 {
-    font-family: 'Scheherazade', serif;
-    color: #234a56;
-}
-
-#dateDueP3 {
-    font-family: 'Scheherazade', serif;
-    color: #234a56;
-} */
 #task .task {
     font-family: 'Adamina', serif;
     color: #234a56;
-
 }
 
 #comments .comments {
     font-family: 'Scheherazade', serif;
     color: #234a56;
-
 }
 
 #timeDue .timeDue {
@@ -376,6 +172,7 @@ colorpallets.net
 #current-time {
     padding: 20px;
     color: #234a56;
+    font-family: 'Scheherazade', serif;
 }
 .delete {
     position: absolute;
