@@ -21,7 +21,7 @@ setInterval(function showTime() {
 // showTime();
 
 var makeTask = function (snap) {
-    toDoCount++
+    // toDoCount++
 
     var rowDiv = $("<div>")
     var checkCol = $("<div>")
@@ -39,6 +39,7 @@ var makeTask = function (snap) {
     var addComments = snap.val().formAddComments;
     var addStartTime = snap.val().formAddStartTIme;
     var addEndTime = snap.val().formAddEndTime;
+    var num = snap.val().formtoDoCount
 
     taskPara.text(toDoTask)
     commentsPara.text(addComments)
@@ -47,7 +48,7 @@ var makeTask = function (snap) {
     datePara.text(addSetDate)
 
     rowDiv.addClass("row border taskBack")
-    rowDiv.attr("id", "item-" + toDoCount)
+    rowDiv.attr("id", "item-" + num)
     checkCol.addClass("col-2")
     formDiv.addClass("form-check")
     taskCol.addClass("col-8")
@@ -62,12 +63,12 @@ var makeTask = function (snap) {
     // checkbox.attr("id", "checkboxID")
 
     var toDoComplete = $("<button class='btn-primary' id='check'>");
-    toDoComplete.attr("data-to-do", toDoCount);
+    toDoComplete.attr("data-to-do", num);
     toDoComplete.addClass("checkbox");
     toDoComplete.append("✓");
     
     var deleteTask = $("<button id='x'>");
-    deleteTask.attr("data-to-delete", toDoCount);
+    deleteTask.attr("data-to-delete", num);
     deleteTask.addClass("delete");
     deleteTask.append("x");
     timeCol.append(deleteTask);
@@ -95,6 +96,8 @@ var makeTask = function (snap) {
 $(document).on("click", "#submitBtn", function (event) {
     event.preventDefault();
 
+    toDoCount++
+
     var task = $("#taskInput").val().trim()
     var comments = $("#commentsInput").val().trim()
     var startTime = $("#startTimeInput").val().trim()
@@ -113,8 +116,12 @@ $(document).on("click", "#submitBtn", function (event) {
     };
     
     console.log(taskData);
-    
-    database.ref("Ver2").push(taskData);
+    var itemNum = "item" + toDoCount
+    console.log(itemNum)
+    database.ref("items/" + itemNum).set(taskData);
+    database.ref("theFinalCountDown").set({
+        toDoCount: toDoCount
+    })
 
     $("#taskInput").val(" ");
     $("#startTimeInput").val(" ");
@@ -184,10 +191,14 @@ $(document).on("click", "#submitBtn", function (event) {
 
 });
 
+database.ref("theFinalCountDown").on("value", function (snapChild) {
+    toDoCount = snapChild.val().toDoCount
+    console.log(toDoCount)
+    console.log("help")
+})
 
-database.ref("Ver2").on("child_added", function (childSnapshot) {
+database.ref("items").on("child_added", function (childSnapshot) {
     makeTask(childSnapshot)
-
     // $("#tableContents").append("<tr><td>" + '<button class="btn-primary"><i class="fa fa-check" id= "delete" aria-hidden="true"></i></i></button>' + "</td><td>" + addSetDate + "</td><td>" + toDoTask + "</td><td>" +
     //     addStartTime + "</td><td>" + addEndTime + "</td><td>" + addComments + "</td></tr>");
 
@@ -213,11 +224,12 @@ $(document.body).on("click", ".checkbox", function () {
 
     // console.log("click")
 });
-$(document.body).on("click", ".delete", function () {
+$(document).on("click", ".delete", function () {
     var thisNumber = $(this).attr("data-to-delete");
-
+    console.log(thisNumber)
     $("#item-" + thisNumber).remove();
-    ref.child(key).remove();
+    database.ref("items/item" + thisNumber).remove()
+    // ref.child(key).remove();
     console.log("click")
 });
 
