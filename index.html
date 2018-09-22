@@ -10,6 +10,9 @@
         crossorigin="anonymous">
     <!--jquery link-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--moment --> 
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
     <!--css page link-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!--font linke-->
@@ -29,7 +32,7 @@
 
 <body>
     <!--navbar-->
-    <nav class="navbar navbar-light bg-light" id="navbar">
+    <nav class="navbar navbar-light bg-white" id="navbar">
         <a class="navbar-brand" href="#">
             <img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
         </a>
@@ -58,6 +61,7 @@
             <div class="col-12" id="column12">
 
                 <div id="inputDiv">
+                      <form>
                        ADD TASK:     <input id="taskInput" type="text" placeholder="Add Task">
                         <br>
                         START TIME:     <input class="timeInput" id="startTimeInput" type="time" placeholder="Start Time">
@@ -65,8 +69,9 @@
                         DATE DUE:     <input class="timeInput" id="dateInput" type="date" placeholder="Date Due">
                         <br>
                         ADDITIONAL COMMENTS:     <input id="commentsInput" type="text" placeholder="Additional comments">
-                        <button id="submitBtn" type="btn" class="btn btn-primary btn-sm">Submit</button>
+                        <input id="submitBtn" type="submit" class="btn btn-primary btn-sm">
                     <h5 class="text-center" id="current-time"></h5>
+                    </form>
                 </div>
 
                 <!--row Two-->
@@ -83,13 +88,13 @@
                     <div class="col-12 border" id="taskDiv">
 
 
-
                     </div>
                 </div>
             </div>
 
         </div>
         <!--divrowfirst-->
+
 
     </div>
     </div>
@@ -99,5 +104,10 @@
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
     <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
+
+<footer class="footer">
+        <p></p>
+    </footer>
+
 
 </html>
