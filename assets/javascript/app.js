@@ -92,14 +92,14 @@ var makeTask = function (snap) {
 
 
 //submit button clicked then do this function
-$("#submitBtn").on("click", function (event) {
+$(document).on("click", "#submitBtn", function (event) {
     event.preventDefault();
 
     var task = $("#taskInput").val().trim()
     var comments = $("#commentsInput").val().trim()
     var startTime = $("#startTimeInput").val().trim()
     var endTime = $("#endTimeInput").val().trim()
-    var dateValue = $("#dateInput").val().trim()
+    var dateValue = $("#dateInput").val()
 
     var taskData = {
 
