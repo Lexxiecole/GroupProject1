@@ -12,21 +12,10 @@ colorpallets.net
 */
 
 
-
-
-/*FONTS!!!*/
-
-/* 
+/*FONTS!!!
 2--TASK & FOLDERS--   font-family: 'Adamina', serif; 
-
 4--QUOTE--   font-family: 'Sacramento', cursive;
-
-
 6--COMMENTS, TIME DUE, DATE DUE, FOLDER NAMES--   font-family: 'Scheherazade', serif;
-
-1--keep --  font-family: 'Merriweather', serif;
-3--keep--   font-family: 'Rufina', serif;
-5--TASK ORGANIZER & TO COMPLETE/COMPLETED--  font-family: 'Cormorant', serif;
 */
 
 
@@ -145,13 +134,11 @@ colorpallets.net
 /* inputs */
 
 #inputDiv {
-    /* margin:  */
-}
-
-#formID {
+    font-family: 'Scheherazade', serif;
+    text-align: center;
+    color: #234a56;
     margin: 15px;
 }
-
 
 #taskInput {
     font-family: 'Rufina', serif;
@@ -160,12 +147,6 @@ colorpallets.net
     width:55%;
 }
 
-#inputDiv {
-    font-family: 'Scheherazade', serif;
-    align: center;
-
-
-}
 
 .timeInput {
     font-family: 'Rufina', serif;
@@ -254,36 +235,14 @@ colorpallets.net
 #task1Col2Form {
 
 }
-/* Possibly Unneccessary below, commented out for now */
 
-/* #task1 {
-    font-family: 'Adamina', serif;
-    color: #234a56;
-
-}
-
-#comments1 {
-    font-family: 'Scheherazade', serif;
-    color: #234a56;
-
-}
-
-#timeDueP1 {
-    font-family: 'Scheherazade', serif;
-    color: #234a56;
-}
-
-#dateDueP1 {
-    font-family: 'Scheherazade', serif;
-    color: #234a56;
-} */
 
 
 /*task two*/
 
 #taskTwo {
     background-color: #89b9c5;
-    font-family: 'Adamina', serif;
+    font-family: 'scherazade', serif;
     color: #234a56;
 }
 .taskBack {
@@ -298,29 +257,6 @@ colorpallets.net
     text-decoration: line-through;
 }
 
-/* #task2 {
-    font-family: 'Adamina', serif;
-    color: #234a56;
-
-}
-
-#comments2 {
-    font-family: 'Scheherazade', serif;
-    color: #234a56;
-
-}
-
-#timeDueP2 {
-    font-family: 'Scheherazade', serif;
-    color: #234a56;
-}
-
-#dateDueP2 {
-    font-family: 'Scheherazade', serif;
-    color: #234a56;
-} */
-
-/*TASK THREE*/
 
 
 #taskThree {
@@ -329,27 +265,7 @@ colorpallets.net
     color: #234a56;
 }
 
-/* #task3 {
-    font-family: 'Adamina', serif;
-    color: #234a56;
 
-}
-
-#comments3 {
-    font-family: 'Scheherazade', serif;
-    color: #234a56;
-
-}
-
-#timeDueP3 {
-    font-family: 'Scheherazade', serif;
-    color: #234a56;
-}
-
-#dateDueP3 {
-    font-family: 'Scheherazade', serif;
-    color: #234a56;
-} */
 #task .task {
     font-family: 'Adamina', serif;
     color: #234a56;
