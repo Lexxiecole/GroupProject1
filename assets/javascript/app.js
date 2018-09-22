@@ -129,66 +129,7 @@ $(document).on("click", "#submitBtn", function (event) {
     $("#dateInput").val(" ");
     $("#commentsInput").val(" ");
 
-    // var toDoTask = $("#taskInput").val().trim();
-
-    // var thisTask = $("<p>");
-
-
-    // //date
-    // var setDate = $("<p>");
-    // setDate.addClass("set-date");
-
-    // var addSetDate = $("#dateInput").val().trim();
-    // thisTask.append(" Date: " + addSetDate + "<br>");
-
-
-    // thisTask.attr("id", "item-", + toDoCount)
-    // thisTask.append("Task: " + toDoTask + "<br>");
-
-    // toDoCount++;
-
-
-    // var comments = $("<p>");
-    // comments.addClass("add-comments");
-
-    // var addComments = $("#commentsInput").val().trim();
-    // thisTask.append(" Comments: " + addComments);
-
-
-    // //start time
-    // var startToDo = $("<p>");
-    // startToDo.addClass("starter");
-
-    // var addStartTime = $("#startTimeInput").val().trim();
-    // thisTask.append("<br>" + "Start Time: " + addStartTime);
-
-    // //end time
-    // var endTime = $("<p>");
-    // endTime.addClass("end-time");
-
-    // var addEndTime = $("#endTimeInput").val().trim();
-    // thisTask.append(" End Time: " + addEndTime);
-
-
-    // //checkmark button
-
-    // var toDoComplete = $("<button class='btn-primary' id='check'>");
-    // toDoComplete.attr("data-to-do", toDoCount);
-    // toDoComplete.addClass("checkbox");
-    // toDoComplete.append("✓");
-
-    // thisTask.prepend(toDoComplete);
-
-
-    // $("#taskInput").val(" ");
-    // $("#startTimeInput").val(" ");
-    // $("#endTimeInput").val(" ");
-    // $("#dateInput").val(" ");
-    // $("#commentsInput").val(" ");
-
-
-    // $(".to-do-list").append(thisTask);
-
+    
 });
 
 database.ref("theFinalCountDown").on("value", function (snapChild) {
@@ -199,10 +140,6 @@ database.ref("theFinalCountDown").on("value", function (snapChild) {
 
 database.ref("items").on("child_added", function (childSnapshot) {
     makeTask(childSnapshot)
-    // $("#tableContents").append("<tr><td>" + '<button class="btn-primary"><i class="fa fa-check" id= "delete" aria-hidden="true"></i></i></button>' + "</td><td>" + addSetDate + "</td><td>" + toDoTask + "</td><td>" +
-    //     addStartTime + "</td><td>" + addEndTime + "</td><td>" + addComments + "</td></tr>");
-
-
 })
 
 var checked = false
@@ -221,15 +158,13 @@ $(document.body).on("click", ".checkbox", function () {
         thisDiv.addClass("taskBack")
         checked = false
     }
-
-    // console.log("click")
+    
 });
 $(document).on("click", ".delete", function () {
     var thisNumber = $(this).attr("data-to-delete");
     console.log(thisNumber)
     $("#item-" + thisNumber).remove();
     database.ref("items/item" + thisNumber).remove()
-    // ref.child(key).remove();
     console.log("click")
 });
 
