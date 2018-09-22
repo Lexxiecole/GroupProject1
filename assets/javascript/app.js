@@ -94,7 +94,7 @@ var makeTask = function (snap) {
 
 //submit button clicked then do this function
 $(document).on("click", "#submitBtn", function (event) {
-    event.preventDefault();
+    // event.preventDefault();
 
     toDoCount++
 
@@ -115,6 +115,8 @@ $(document).on("click", "#submitBtn", function (event) {
     
     };
     
+    // $("#taskDiv").empty()
+
     console.log(taskData);
     var itemNum = "item" + toDoCount
     console.log(itemNum)
@@ -129,7 +131,6 @@ $(document).on("click", "#submitBtn", function (event) {
     $("#dateInput").val(" ");
     $("#commentsInput").val(" ");
 
-    
 });
 
 database.ref("theFinalCountDown").on("value", function (snapChild) {
@@ -138,7 +139,7 @@ database.ref("theFinalCountDown").on("value", function (snapChild) {
     console.log("help")
 })
 
-database.ref("items").on("child_added", function (childSnapshot) {
+database.ref("items").orderByChild("formAddSetDate").on("child_added", function (childSnapshot) {
     makeTask(childSnapshot)
 })
 
@@ -158,7 +159,7 @@ $(document.body).on("click", ".checkbox", function () {
         thisDiv.addClass("taskBack")
         checked = false
     }
-    
+
 });
 $(document).on("click", ".delete", function () {
     var thisNumber = $(this).attr("data-to-delete");
