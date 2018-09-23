@@ -114,13 +114,6 @@ FONTS!!!
 }
 
 
-
-
-
-
-
-/*javascript*/
-
 .taskBack {
     background-color: #c1dee2;
     font-family: 'Scheherazade', serif;
@@ -130,12 +123,6 @@ FONTS!!!
 
 .checkTaskBack {
     background-color: #89b9c5;
-
-
-
-/*task two*/
-
-
     font-family: 'Scheherazade', serif;
     color: #234a56;
     text-decoration: line-through;

@@ -112,7 +112,6 @@ $(document).on("click", "#submitBtn", function (event) {
     
     }
     
-    
     console.log(taskData);
     var itemNum = "item" + toDoCount
     console.log(itemNum)
@@ -127,8 +126,6 @@ $(document).on("click", "#submitBtn", function (event) {
     $("#dateInput").val(" ");
     $("#commentsInput").val(" ");
 
-    dateArray.push(dateValue);
-
 });
 
 database.ref("theFinalCountDown").on("value", function (snapChild) {
@@ -137,14 +134,13 @@ database.ref("theFinalCountDown").on("value", function (snapChild) {
     console.log("help")
 })
 
+
 database.ref("items").orderByChild('formAddSetDate').on("child_added", function (childSnapshot) {
     makeTask(childSnapshot)
-
 })
 
 database.ref("items").startAt('00:00').on("child_added", function (childSnapshot) {
     makeTask(childSnapshot)
-
 })
 
 
@@ -165,7 +161,6 @@ $(document.body).on("click", ".checkbox", function () {
         checked = false
     }
 
-    // console.log("click")
 });
 $(document).on("click", ".delete", function () {
     var thisNumber = $(this).attr("data-to-delete");

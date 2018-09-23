@@ -21,7 +21,7 @@
     <!--javascript link-->
 
     <!--javascript page link-->
-
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
     <!--font awesome link-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
@@ -34,7 +34,7 @@
     <!--navbar-->
     <nav class="navbar navbar-light bg-white" id="navbar">
         <a class="navbar-brand" href="#">
-            <img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+            <!-- <img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" alt=""> -->
         </a>
     </nav>
 
@@ -61,16 +61,16 @@
             <div class="col-12" id="column12">
 
                 <div id="inputDiv">
-                      <form>
+                    <form>
                        ADD TASK:     <input id="taskInput" type="text" placeholder="Add Task">
                         <br>
-                        START TIME:     <input class="timeInput" id="startTimeInput" type="time" placeholder="Start Time">
-                        END TIME:     <input class="timeInput" id="endTimeInput" type="time" placeholder="End Time">
-                        DATE DUE:     <input class="timeInput" id="dateInput" type="date" placeholder="Date Due">
+                        START TIME: <input class="timeInput" id="startTimeInput" type="time" placeholder="Start Time">
+                        END TIME: <input class="timeInput" id="endTimeInput" type="time" placeholder="End Time">
+                        DATE DUE: <input class="timeInput" id="dateInput" type="date" placeholder="Date Due">
                         <br>
                         ADDITIONAL COMMENTS:     <input id="commentsInput" type="text" placeholder="Additional comments">
                         <input id="submitBtn" type="submit" class="btn btn-primary btn-sm">
-                    <h5 class="text-center" id="current-time"></h5>
+                        <h5 class="text-center" id="current-time"></h5>
                     </form>
                 </div>
 
@@ -87,7 +87,6 @@
                 <div class="row" id="row3">
                     <div class="col-12 border" id="taskDiv">
 
-
                     </div>
                 </div>
             </div>
@@ -101,7 +100,6 @@
     <!--divclass-->
 
     <!--JAVASCRIPT-->
-    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
     <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 
