@@ -15,10 +15,9 @@ var toDoCount = 0;
 
 setInterval(function showTime() {
     var d = new Date();
-    document.getElementById("current-time").textContent = ("Current Time: " + d);
+    document.getElementById("current-time").textContent = ("Current Time: " + moment().format('MMMM Do YYYY, hh:mm A'));
     // console.log(d);
 }, 1000);
-// showTime();
 
 var makeTask = function (snap) {
     // toDoCount++
@@ -94,8 +93,6 @@ var makeTask = function (snap) {
 
 //submit button clicked then do this function
 $(document).on("click", "#submitBtn", function (event) {
-    // event.preventDefault();
-
     toDoCount++
 
     var task = $("#taskInput").val().trim()
@@ -113,10 +110,8 @@ $(document).on("click", "#submitBtn", function (event) {
         formAddStartTIme: startTime,
         formAddEndTime: endTime,
     
-    };
+    }
     
-    // $("#taskDiv").empty()
-
     console.log(taskData);
     var itemNum = "item" + toDoCount
     console.log(itemNum)
@@ -139,9 +134,15 @@ database.ref("theFinalCountDown").on("value", function (snapChild) {
     console.log("help")
 })
 
-database.ref("items").orderByChild("formAddSetDate").on("child_added", function (childSnapshot) {
+
+database.ref("items").orderByChild('formAddSetDate').on("child_added", function (childSnapshot) {
     makeTask(childSnapshot)
 })
+
+database.ref("items").startAt('00:00').on("child_added", function (childSnapshot) {
+    makeTask(childSnapshot)
+})
+
 
 var checked = false
 //remove item
@@ -168,6 +169,10 @@ $(document).on("click", ".delete", function () {
     database.ref("items/item" + thisNumber).remove()
     console.log("click")
 });
+
+
+
+
 
 
 

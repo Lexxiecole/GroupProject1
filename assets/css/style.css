@@ -59,6 +59,7 @@ FONTS!!!
     margin: 13px;
 }
 
+
 #taskInput {
     font-family: 'Rufina', serif;
     color: #234a56;
@@ -84,6 +85,7 @@ FONTS!!!
     font-size: 13px;
     width: 45%;
 }
+
 
 /* submit button */
 
@@ -111,8 +113,6 @@ FONTS!!!
     background-color: #417d95;
 }
 
-
-/*javascript*/
 
 .taskBack {
     background-color: #c1dee2;
@@ -167,9 +167,35 @@ FONTS!!!
     margin-top: 20px;
 }
 
+.footer {
+    
+    position: absolute;
+    /* bottom: 0; */
+    background-color: white;
+    /* Box-model */
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+}
 
+#inputDiv {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+}
 
+input {
+    padding: 5px;
+    
+}
 
+#taskInput {
+    margin-bottom: 5px;
+}
 
+#commentsInput {
+    margin-top: 5px;
+}
 
-
+#quote {
+    margin-bottom: 30px;
+}

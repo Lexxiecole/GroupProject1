@@ -10,6 +10,9 @@
         crossorigin="anonymous">
     <!--jquery link-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--moment --> 
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
     <!--css page link-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!--font linke-->
@@ -29,7 +32,7 @@
 
 <body>
     <!--navbar-->
-    <nav class="navbar navbar-light bg-light" id="navbar">
+    <nav class="navbar navbar-light bg-white" id="navbar">
         <a class="navbar-brand" href="#">
             <!-- <img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" alt=""> -->
         </a>
@@ -59,13 +62,13 @@
 
                 <div id="inputDiv">
                     <form>
-                        ADD TASK: <input id="taskInput" type="text" placeholder="Add Task">
+                       ADD TASK:     <input id="taskInput" type="text" placeholder="Add Task">
                         <br>
                         START TIME: <input class="timeInput" id="startTimeInput" type="time" placeholder="Start Time">
                         END TIME: <input class="timeInput" id="endTimeInput" type="time" placeholder="End Time">
                         DATE DUE: <input class="timeInput" id="dateInput" type="date" placeholder="Date Due">
                         <br>
-                        ADDITIONAL COMMENTS: <input id="commentsInput" type="text" placeholder="Additional comments">
+                        ADDITIONAL COMMENTS:     <input id="commentsInput" type="text" placeholder="Additional comments">
                         <input id="submitBtn" type="submit" class="btn btn-primary btn-sm">
                         <h5 class="text-center" id="current-time"></h5>
                     </form>
@@ -75,7 +78,6 @@
                 <div class="row" id="row2">
 
                     <div class="col-12 border text-center" id="row2Column8">
-                        <!-- javascript: border of same color goes around tasks when to complete is on and when completed is on. border color switches -->
                         <h1 id="toCompleteBtn">Tasks To Complete</h1>
                     </div>
 
@@ -92,6 +94,7 @@
         </div>
         <!--divrowfirst-->
 
+
     </div>
     </div>
     <!--divclass-->
@@ -99,5 +102,10 @@
     <!--JAVASCRIPT-->
     <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
+
+<footer class="footer">
+        <p></p>
+    </footer>
+
 
 </html>
