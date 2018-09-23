@@ -65,7 +65,7 @@ var makeTask = function (snap) {
     toDoComplete.attr("data-to-do", num);
     toDoComplete.addClass("checkbox");
     toDoComplete.append("✓");
-    
+
     var deleteTask = $("<button id='x'>");
     deleteTask.attr("data-to-delete", num);
     deleteTask.addClass("delete");
@@ -85,9 +85,9 @@ var makeTask = function (snap) {
     rowDiv.append(checkCol)
     rowDiv.append(taskCol)
     rowDiv.append(timeCol)
-    
+
     $("#taskDiv").append(rowDiv)
-   
+
 }
 
 
@@ -109,9 +109,9 @@ $(document).on("click", "#submitBtn", function (event) {
         formAddComments: comments,
         formAddStartTIme: startTime,
         formAddEndTime: endTime,
-    
+
     }
-    
+
     console.log(taskData);
     var itemNum = "item" + toDoCount
     console.log(itemNum)
@@ -169,6 +169,26 @@ $(document).on("click", ".delete", function () {
     database.ref("items/item" + thisNumber).remove()
     console.log("click")
 });
+
+$(document).ready(function () {
+
+    var queryURL = "http://quotes.rest/qod.json";
+
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+    }).done(function (response) {
+        console.log(queryURL);
+        console.log(response);
+        var theQuote = $(response);
+        console.log(theQuote);
+
+    })
+})
+
+
+
+
 
 
 
