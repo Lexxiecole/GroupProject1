@@ -40,13 +40,14 @@ var makeTask = function (snap) {
     var addEndTime = snap.val().formAddEndTime;
     var num = snap.val().formtoDoCount
 
+    var editDateForm = moment(addSetDate).format("MMMM Do YYYY")
     var editStartTime = moment(addStartTime, 'HH:mm').format('hh:mm a')
     var editEndTime = moment(addEndTime, 'HH:mm').format('hh:mm a')
     taskPara.text(toDoTask)
     commentsPara.text(addComments)
     startTimePara.text(editStartTime + " - " + editEndTime)
     // endTimePara.text(addEndTime)
-    datePara.text(addSetDate)
+    datePara.text(editDateForm)
 
     rowDiv.addClass("row border taskBack")
     rowDiv.attr("id", "item-" + num)
