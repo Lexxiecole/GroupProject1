@@ -196,6 +196,9 @@ input {
     margin-top: 5px;
 }
 
-#quote {
+#author {
+    font-family: 'Sacramento', cursive;
+    font-size: 25px;
+    color: #234a56;
     margin-bottom: 30px;
 }
