@@ -17,11 +17,11 @@ setInterval(function showTime() {
     var d = new Date();
     document.getElementById("current-time").textContent = ("Current Time: " + moment().format('MMMM Do YYYY, hh:mm A'));
     // console.log(d);
-    for (var i = 0; i < taskTimeArray.length; i++) {
-        if (moment().format("HH:mm") >= taskTimeArray[i].endTime) {
-            createNotification(taskTimeArray[i].task)
-        }
-    }
+    // for (var i = 0; i < taskTimeArray.length; i++) {
+    //     if (moment().format("HH:mm") >= taskTimeArray[i].endTime) {
+    //         createNotification(taskTimeArray[i].task)
+    //     }
+    // }
 }, 1000);
 
 var taskTimeArray = []
