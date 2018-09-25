@@ -17,7 +17,14 @@ setInterval(function showTime() {
     var d = new Date();
     document.getElementById("current-time").textContent = ("Current Time: " + moment().format('MMMM Do YYYY, hh:mm A'));
     // console.log(d);
+    for (var i = 0; i < taskTimeArray.length; i++) {
+        if (moment().format("HH:mm") >= taskTimeArray[i].endTime) {
+            createNotification(taskTimeArray[i].task)
+        }
+    }
 }, 1000);
+
+var taskTimeArray = []
 
 var makeTask = function (snap) {
     // toDoCount++
@@ -39,6 +46,13 @@ var makeTask = function (snap) {
     var addStartTime = snap.val().formAddStartTIme;
     var addEndTime = snap.val().formAddEndTime;
     var num = snap.val().formtoDoCount
+
+    var timeObject = {
+        task: toDoTask,
+        startTime: addStartTime,
+        endTime: addEndTime
+    }
+    taskTimeArray.push(timeObject)
 
     var editDateForm = moment(addSetDate).format("MMMM Do YYYY")
     var editStartTime = moment(addStartTime, 'HH:mm').format('hh:mm a')
@@ -191,9 +205,6 @@ $(document).ready(function () {
     })
 })
 
-
-
-createNotification("The Title")
 function createNotification(title) {
 
     // Let's check if the browser supports notifications
@@ -206,7 +217,7 @@ function createNotification(title) {
       // If it's okay let's create a notification
 
       var img = '/to-do-notifications/img/icon-128.png';
-      var text = 'HEY! Your task "' + title + '" is now overdue.';
+      var text = 'HEY! Your task "' + title + '" is now due.';
       var notification = new Notification('To do list', { body: text, icon: img });
 
     //   window.navigator.vibrate(500);
@@ -226,7 +237,7 @@ function createNotification(title) {
         // If the user is okay, let's create a notification
         if (permission === "granted") {
           var img = '/to-do-notifications/img/icon-128.png';
-          var text = 'HEY! Your task "' + title + '" is now overdue.';
+          var text = 'HEY! Your task "' + title + '" is now due.';
           var notification = new Notification('To do list', { body: text, icon: img });
 
         //   window.navigator.vibrate(500);
