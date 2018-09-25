@@ -100,13 +100,6 @@ var makeTask = function (snap) {
     rowDiv.append(timeCol)
     
     $("#taskDiv").append(rowDiv)
-
-    for (var i = 0; i < taskTimeArray.length; i++) {
-        if (moment().format("HH:mm") >= taskTimeArray[i].endTime && moment().format("MMMM Do YYYY") >= taskTimeArray[i].date) {
-            createNotification(taskTimeArray[i].task)
-            console.log("happens")
-        }
-    }
     
 }
 
@@ -248,3 +241,16 @@ function createNotification(title) {
       });
     }
 }
+setTimeout(function notificationTimer () {
+    for (var i = 0; i < taskTimeArray.length; i++) {
+        console.log("hello")
+        if (moment().format("MMMM Do YYYY") >= taskTimeArray[i].date) {
+            console.log("date")
+            if (moment().format("HH:mm") >= taskTimeArray[i].endTime) {
+                console.log("time")
+                createNotification(taskTimeArray[i].task)
+                console.log("happens")
+            }
+        }
+    }
+}, 5000)
