@@ -100,10 +100,11 @@ var makeTask = function (snap) {
     rowDiv.append(timeCol)
     
     $("#taskDiv").append(rowDiv)
-    
+
     for (var i = 0; i < taskTimeArray.length; i++) {
-    if (moment().format("HH:mm") >= taskTimeArray[i].endTime && moment().format("MMMM Do YYYY") >= taskTimeArray[i].date) {
+        if (moment().format("HH:mm") >= taskTimeArray[i].endTime && moment().format("MMMM Do YYYY") >= taskTimeArray[i].date) {
             createNotification(taskTimeArray[i].task)
+            console.log("happens")
         }
     }
     
