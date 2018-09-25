@@ -189,7 +189,7 @@ $(document).on("click", ".delete", function () {
 
 $(document).ready(function () {
 
-    var queryURL = "http://quotes.rest/qod.json";
+    var queryURL = "https://quotes.rest/qod.json";
 
     $.ajax({
         url: queryURL,
@@ -216,7 +216,7 @@ function createNotification(title) {
     else if (Notification.permission === "granted") {
       // If it's okay let's create a notification
 
-      var img = '/to-do-notifications/img/icon-128.png';
+      var img = 'assets/images/Exclamation_Point_Emoticon.png';
       var text = 'HEY! Your task "' + title + '" is now due.';
       var notification = new Notification('To do list', { body: text, icon: img });
 
@@ -236,7 +236,7 @@ function createNotification(title) {
 
         // If the user is okay, let's create a notification
         if (permission === "granted") {
-          var img = '/to-do-notifications/img/icon-128.png';
+          var img = 'assets/images/Exclamation_Point_Emoticon.png';
           var text = 'HEY! Your task "' + title + '" is now due.';
           var notification = new Notification('To do list', { body: text, icon: img });
 
