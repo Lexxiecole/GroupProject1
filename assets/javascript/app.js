@@ -17,18 +17,13 @@ setInterval(function showTime() {
     var d = new Date();
     document.getElementById("current-time").textContent = ("Current Time: " + moment().format('MMMM Do YYYY, hh:mm A'));
     // console.log(d);
-    // for (var i = 0; i < taskTimeArray.length; i++) {
-    //     if (moment().format("HH:mm") >= taskTimeArray[i].endTime) {
-    //         createNotification(taskTimeArray[i].task)
-    //     }
-    // }
 }, 1000);
 
 var taskTimeArray = []
 
 var makeTask = function (snap) {
     // toDoCount++
-
+    
     var rowDiv = $("<div>")
     var checkCol = $("<div>")
     var formDiv = $("<div>")
@@ -46,14 +41,15 @@ var makeTask = function (snap) {
     var addStartTime = snap.val().formAddStartTIme;
     var addEndTime = snap.val().formAddEndTime;
     var num = snap.val().formtoDoCount
-
+    
     var timeObject = {
         task: toDoTask,
         startTime: addStartTime,
-        endTime: addEndTime
+        endTime: addEndTime,
+        date: editDateForm
     }
     taskTimeArray.push(timeObject)
-
+    
     var editDateForm = moment(addSetDate).format("MMMM Do YYYY")
     var editStartTime = moment(addStartTime, 'HH:mm').format('hh:mm a')
     var editEndTime = moment(addEndTime, 'HH:mm').format('hh:mm a')
@@ -62,7 +58,7 @@ var makeTask = function (snap) {
     startTimePara.text(editStartTime + " - " + editEndTime)
     // endTimePara.text(addEndTime)
     datePara.text(editDateForm)
-
+    
     rowDiv.addClass("row border taskBack")
     rowDiv.attr("id", "item-" + num)
     checkCol.addClass("col-2")
@@ -77,20 +73,20 @@ var makeTask = function (snap) {
     // checkbox.addClass("form-check-input")
     // checkbox.attr("type", "checkbox")
     // checkbox.attr("id", "checkboxID")
-
+    
     var toDoComplete = $("<button class='btn-primary' id='check'>");
     toDoComplete.attr("data-to-do", num);
     toDoComplete.addClass("checkbox");
     toDoComplete.append("✓");
-
+    
     var deleteTask = $("<button id='x'>");
     deleteTask.attr("data-to-delete", num);
     deleteTask.addClass("delete");
     deleteTask.append("x");
     timeCol.append(deleteTask);
-
+    
     formDiv.append(toDoComplete)
-
+    
     // formDiv.append(checkbox)
     checkCol.append(formDiv)
     taskCol.append(taskPara)
@@ -98,28 +94,34 @@ var makeTask = function (snap) {
     timeCol.append(startTimePara)
     // timeCol.append(endTimePara)
     timeCol.append(datePara)
-
+    
     rowDiv.append(checkCol)
     rowDiv.append(taskCol)
     rowDiv.append(timeCol)
-
+    
     $("#taskDiv").append(rowDiv)
-
+    
+    for (var i = 0; i < taskTimeArray.length; i++) {
+    if (moment().format("HH:mm") >= taskTimeArray[i].endTime && moment().format("MMMM Do YYYY") >= taskTimeArray[i].date) {
+            createNotification(taskTimeArray[i].task)
+        }
+    }
+    
 }
 
 
 //submit button clicked then do this function
 $(document).on("click", "#submitBtn", function (event) {
     toDoCount++
-
+    
     var task = $("#taskInput").val().trim()
     var comments = $("#commentsInput").val().trim()
     var startTime = $("#startTimeInput").val().trim()
     var endTime = $("#endTimeInput").val().trim()
     var dateValue = $("#dateInput").val()
-
+    
     var taskData = {
-
+        
         formtoDoCount: toDoCount,
         formToDoTask: task,
         formAddSetDate: dateValue,
